@@ -45,3 +45,24 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 3. Exploitation:- Gaining system access
 4. Maintaining Access:- Keep system access after leaving the system access
 5. Clearing Logs:- Remove footprints
+
+
+## Vulnerability Assessment & Penetration Testing is Divided into 2 Phase
+
+### Phase 1 - Passive mode:
+  Tries to understand the application’s logic and plays with the application. Tools can be used for information gathering. For example, an HTTP proxy can be used to observe all the HTTP requests and responses.
+  
+### Phase 2 - Active mode:
+  Active tests have been split into 11 sub-categories.
+1. Information Gathering
+2. Configuration and Deployment Management Testing
+3. Identity Management Testing 
+4. Authentication Testing 
+5. Authorization Testing 
+6. Session Management Testing 
+7. Input validation Testing
+8. Error Handling
+9. Cryptography
+10. Business Logic Testing
+11. Client Side Testing
+
