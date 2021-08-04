@@ -146,9 +146,150 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 
 ## 5. Authorization Testing 
+
+5.1 Testing Directory traversal/file include
+
+5.2 Testing for bypassing authorization schema
+
+5.3 Testing for Privilege Escalation
+
+5.4 Testing for Insecure Direct Object References
+
 ## 6. Session Management Testing 
+
+6.1 Testing for Bypassing Session Management Schema
+
+6.2 Testing for Cookies attributes
+
+6.3 Testing for Session Fixation
+
+6.4 Testing for Exposed Session Variables
+
+6.5 Testing for Cross Site Request Forgery
+
+6.6 Testing for logout functionality
+
+6.7 Test Session Timeout
+
+6.8 Testing for Session puzzling
+
+
 ## 7. Input validation Testing
+
+7.1 Testing for Reflected Cross Site Scripting
+
+7.2 Testing for Stored Cross Site Scripting
+
+7.3 Testing for HTTP Verb Tampering
+
+7.4 Testing for HTTP Parameter pollution
+
+7.5 Testing for SQL Injection
+
+7.6 Oracle Testing
+
+7.7 MySQL Testing
+
+7.8 SQL Server Testing
+
+7.9 Testing PostgreSQL
+
+7.10 MS Access Testing
+
+7.11 Testing for NoSQL injection
+
+7.12 Testing for LDAP Injection
+
+7.13 Testing for ORM Injection
+
+7.14 Testing for XML Injection
+
+7.15 Testing for SSI Injection
+
+7.16 Testing for XPath Injection
+
+7.17 IMAP/SMTP Injection
+
+7.18 Testing for Code Injection
+
+7.19 Testing for Local File Inclusion
+
+7.20 Testing for Remote File Inclusion
+
+7.21 Testing for Command Injection
+
+7.22 Testing for Buffer overflow
+
+7.23 Testing for Heap overflow
+
+7.24 Testing for Stack overflow
+
+7.25 Testing for Format string
+
+7.26 Testing for incubated vulnerabilities
+
+7.27 Testing for HTTP Splitting/Smuggling
+
+
 ## 8. Error Handling
+
+8.1 Analysis of Error Codes
+
+8.2 Analysis of Stack Traces
+
+
 ## 9. Cryptography
+
+9.1 Testing for Weak SSL/TSL Ciphers, Insufficient Transport Layer Protection
+
+9.2 Testing for Padding Oracle
+
+9.3 Testing for Sensitive information sent via unencrypted channels
+
+
 ## 10. Business Logic Testing
+
+10.1 Test Business Logic Data Validation
+
+10.2 Test Ability to Forge Requests
+
+10.3 Test Integrity Checks
+
+10.4 Test for Process Timing
+
+10.5 Test Number of Times a Function Can be Used Limits
+
+10.6 Testing for the Circumvention of Work Flows
+
+10.7 Test Defenses Against Application Mis-use
+
+10.8 Test Upload of Unexpected File Types
+
+10.9 Test Upload of Malicious Files
+
 ## 11. Client Side Testing
+
+11.1 Testing for DOM based Cross Site Scripting
+
+11.2 Testing for JavaScript Execution
+
+11.3 Testing for HTML Injection
+
+11.4 Testing for Client Side URL Redirect
+
+11.5 Testing for CSS Injection
+
+11.6 Testing for Client Side Resource Manipulation
+
+11.7 Test Cross Origin Resource Sharing
+
+11.8 Testing for Cross Site Flashing
+
+11.9 Testing for Clickjacking
+
+11.10 Testing WebSockets
+
+11.11 Test Web Messaging
+
+11.12 Test Local Storage
+
