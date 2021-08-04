@@ -67,11 +67,38 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 11. Client Side Testing
 
 ## 1. Information Gathering
-1.1 Conduct Search Engine Discovery and Reconnaissance for Information Leakage
+***1.1 Conduct Search Engine Discovery and Reconnaissance for Information Leakage***
+- Search Engine:
+  - Shodan: Shodan is a search engines that user find specific types (Computers, web cams, routers, servers, etc.)
+  - censys.io: Find and analyze every reachable server and device on the Internet.
+  - PunkSpider:	Global web application vulnerability search engine. Deeper, faster, harder scans
+  - binsearch.info: News Groups Search
+  - Duck Duck Go:	does not collect or share personal information
+  - ixquick/Startpage: Combines the top ten results from multiple search engines
+  - Builtwith.com: Find out what websites are Built With
+  - OSINT Framework: OSINT Framework to perform various recon techniques on Companies, People, Phone Number, Bitcoin Addresses, etc., 
+- Google Hacking Database
+- [Google Search operators](https://moz.com/learn/seo/search-operators)
+- https://gbhackers.com/latest-google-dorks-list
 
-1.2. Fingerprint Web Server
+***1.2. Fingerprint Web Server:*** Knowing the version and type of running web server
+  - Tools: 
+    - Httprint, Httprecon,
+  - Online Testing Sites:
+    - https://w3techs.com/sites
+    - Shodan: http://www.shodanhq.com
+    - https://who.is
+    - Netcraft: https://toolbar.netcraft.com/site_report?url=http://dulcedaynutrifood.com
+    - https://www.dnsstuff.com
+  - Browser Plug-in: wappalyzer (Firefox / Chrome browser Plug-in)
 
-1.3. Review Webserver Metafiles for Information Leakage
+
+***1.3. Review Webserver Metafiles/Webpage Comments for Information Leakage:*** Analyze robots.txt and identify <META> Tags from website.
+  - Tools:
+    - curl: ```$ curl --url https://www.naano.com/robots.txt ```
+    - wget: ```$ wget www.nano.com/robots.txt ```
+    - Browser “view source” function (Ctrl + U)
+
 
 1.4. Enumerate Applications on Webserver
 
