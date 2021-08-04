@@ -260,7 +260,13 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 ## 8. Error Handling
 
-8.1 Analysis of Error Codes
+***8.1 Analysis of Error Codes***
+ - Web Server Errors: A common error that we can see during testing is the HTTP 404 Not Found.
+  ![image](https://user-images.githubusercontent.com/65315090/128235946-c405fb72-d3cd-495e-ba89-8b563fb9a3fc.png)
+ - Application Server Error: Application errors are returned by the application itself, rather than the web server. These could be error messages from framework code (ASP, JSP etc.) Detailed application errors typically provide information of server paths, installed libraries and application versions.
+ - Database Error: Database errors are those returned by the Database System when there is a problem with the query or the connection
+     80004005:- is a generic IIS error code which indicates that it could not establish a connection to its associated database
+- ***Tools:*** ErrorMint
 
 8.2 Analysis of Stack Traces
 
