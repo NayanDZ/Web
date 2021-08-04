@@ -268,7 +268,16 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
      80004005:- is a generic IIS error code which indicates that it could not establish a connection to its associated database
 - ***Tools:*** ErrorMint
 
-8.2 Analysis of Stack Traces
+***8.2 Analysis of Stack Traces***
+ - Stack traces are not vulnerabilities by themselves, but they often reveal information that is interesting to an attacker. 
+ - Attackers attempt to generate these stack traces by tampering with the input to the web application with malformed HTTP requests and other input data.
+ - Some tests to try include:
+    -	Invalid input (such as input that is not consistent with application logic.
+    -	Input that contains non alphanumeric characters or query syntax.
+    -	Empty inputs.
+    -	Inputs that are too long.
+    -	Access to internal pages without authentication.
+    -	Bypassing application flow.
 
 
 ## 9. Cryptography
