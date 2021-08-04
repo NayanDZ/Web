@@ -66,3 +66,89 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 10. Business Logic Testing
 11. Client Side Testing
 
+## 1. Information Gathering
+1.1 Conduct Search Engine Discovery and Reconnaissance for Information Leakage
+
+1.2. Fingerprint Web Server
+
+1.3. Review Webserver Metafiles for Information Leakage
+
+1.4. Enumerate Applications on Webserver
+
+1.5. Review Webpage Comments and Metadata for Information Leakage
+
+1.6. Identify application entry points
+
+1.7. Map execution paths through application
+
+1.8. Fingerprint Web Application Framework
+
+1.9. Fingerprint Web Application
+
+1.10. Map Application Architecture
+
+## 2. Configuration and Deployment Management Testing
+2.1 Test Network/Infrastructure Configuration
+
+2.2 Test Application Platform Configuration
+
+2.3 Test File Extensions Handling for Sensitive Information
+
+2.4 Backup and Unreferenced Files for Sensitive Information
+
+2.5 Enumerate Infrastructure and Application Admin Interfaces
+
+2.6 Test HTTP Methods
+
+2.7 Test HTTP Strict Transport Security
+
+2.8 Test RIA cross domain policy
+
+
+
+## 3. Identity Management Testing 
+
+3.1 Test Role Definitions
+
+3.2 Test User Registration Process
+
+3.3 Test Account Provisioning Process
+
+3.4 Testing for Account Enumeration and Guessable User Account
+
+3.5 Testing for Weak or unenforced username policy
+
+3.6 Test Permissions of Guest/Training Accounts
+
+3.7 Test Account Suspension/Resumption Process
+
+## 4. Authentication Testing 
+
+4.1 Testing for Credentials Transported over an Encrypted Channel
+
+4.2 Testing for default credentials
+
+4.3 Testing for Weak lock out mechanism
+
+4.4 Testing for bypassing authentication schema
+
+4.5 Test remember password functionality
+
+4.6 Testing for Browser cache weakness
+
+4.7 Testing for Weak password policy
+
+4.8 Testing for Weak security question/answer
+
+4.9 Testing for weak password change or reset functionalities
+
+4.10 Testing for Weaker authentication in alternative channel
+
+
+## 5. Authorization Testing 
+## 6. Session Management Testing 
+## 7. Input validation Testing
+## 8. Error Handling
+## 9. Cryptography
+## 10. Business Logic Testing
+## 11. Client Side Testing
