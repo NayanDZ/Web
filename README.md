@@ -282,7 +282,22 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 ## 9. Cryptography
 
-9.1 Testing for Weak SSL/TSL Ciphers, Insufficient Transport Layer Protection
+***9.1 Testing for Weak SSL/TSL Ciphers, Insufficient Transport Layer Protection***
+  - When the SSL/TLS service is present it is good but it following vulnerabilities exist:
+    - SSL/TLS protocols, Ciphers, keys and renegotiation must be properly configured.
+    - Certificate validity must be ensured:Testing SSL certificate validity – client and server (manually)
+
+  - Tools:
+    - sslscan: ```$ sslscan www.microsoft.com```
+    - openssl: ```$ openssl s_client –connect www.facebook.com:443 –showcert```
+    - sslyze ( TLS/SSL Implementation Analyzer): ```$ sslyze--regular www.microsoft.com```
+    - testssl.sh: ```$ testssl.sh –t smtp smtp.gmail.com:25```
+    - Nmap: ```$nmap --script ssl-enum-ciphers -p 443 microsoft.com
+               $ nmap -p 443 --script ssl-css-injection microsoft.com```
+    - SSL-heartbleed: ```$ nmap -p 433 --script ssl-heartbleed microsoft.com```
+    - SSL-Poodle: ```$ nmap -sV --version-light --script ssl-poodle -p 443 microsoft.com```
+    
+  
 
 9.2 Testing for Padding Oracle
 
