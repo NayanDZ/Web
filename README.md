@@ -100,17 +100,37 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
     - Browser “view source” function (Ctrl + U)
 
 
-1.4. Enumerate Applications on Webserver
-
-1.5. Review Webpage Comments and Metadata for Information Leakage
-
+***1.4. Enumerate Applications on Webserver:*** Find out which particular applications are hosted on a web server
+      ```$ nmap –PN –sT –sV –p0-65535 192.168.1.100```
+  
 1.6. Identify application entry points
 
 1.7. Map execution paths through application
 
 1.8. Fingerprint Web Application Framework
 
-1.9. Fingerprint Web Application
+***1.9. Fingerprint Web Application:*** Identify the web application and version to determine known vulnerabilities and the appropriate exploits to use during testing.
+  - DNS Enumeration:
+    - Dnsenum: ```	$ dnsenum Microsoft.com ```
+    -	Dnsrecon: ```	$ dnsrecon –d Microsoft.com ```
+    - nslookup: ``` $ nslookup Microsoft.com {-type=mx (Mail server), -type=soa (Technical information), -type=any (all available)}
+    - Knock: Sub domain brute forcing ``` $ knockpy Microsoft.com ```
+    - Dmitry: ```	$ Dmitry -winsepfb -o test.txt Microsoft.com ```
+     - dig: ``` dig microsoft.com ```
+    - whois: ``` $ whois example.com ```
+    - recon-ng: ``` https://hackertarget.com/recon-ng-tutorial ```
+                    
+                    $ recon-ng
+                    
+                    [recon-ng][default] > use recon/domains-hosts/hackertarget
+                    
+                    [recon-ng][default][hackertarget] > show options
+                    
+                    [recon-ng][default][hackertarget] > set SOURCE www.nano.com
+                    
+                    [recon-ng][default][hackertarget] > run 
+               
+    
 
 1.10. Map Application Architecture
 
