@@ -113,12 +113,12 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
   - DNS Enumeration:
     - Dnsenum: ```	$ dnsenum Microsoft.com ```
     -	Dnsrecon: ```	$ dnsrecon –d Microsoft.com ```
-    - nslookup: ``` $ nslookup Microsoft.com {-type=mx (Mail server), -type=soa (Technical information), -type=any (all available)}
+    - nslookup: ``` $ nslookup Microsoft.com {-type=mx (Mail server), -type=soa (Technical information), -type=any (all available)} ```
     - Knock: Sub domain brute forcing ``` $ knockpy Microsoft.com ```
     - Dmitry: ```	$ Dmitry -winsepfb -o test.txt Microsoft.com ```
      - dig: ``` dig microsoft.com ```
     - whois: ``` $ whois example.com ```
-    - recon-ng: ``` https://hackertarget.com/recon-ng-tutorial ```
+    - recon-ng: https://hackertarget.com/recon-ng-tutorial
                     
                     $ recon-ng
                     
@@ -130,7 +130,43 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
                     
                     [recon-ng][default][hackertarget] > run 
                
-    
+  - Port Scanning (Service Fingerprinting & OS Detection):
+    - Nmap: 
+                    $ nmap –sS –A –PN –p- --script=http-title nano.com
+                      -sS – syn scan
+		                  -A – OS detection + service fingerprint
+		                  -PN – no ping
+		                  -p- – all ports
+    - Port scans top 1000 TCP ports: ``` $ nmap 192.168.100.2 ```
+    - Port scans all 65535 TCP ports: ``` $ nmap –A –p- 192.168.100.2 ```
+    - Port scans top 1000 UDP ports: ``` $ nmap -sU 192.168.100.2 ```
+    - Port scans all 65535 UDP ports: ``` $ nmap –sU -p- -A 192.168.100.2 ```
+
+  - Traceroute:
+    - LFT: ``` $ lft –s Microsoft.com ```
+    - tcptraceroute: ``` $ tcptraceroute Microsoft.com 433 ```
+    - hping: ``` $ hping –traceroute -1 www.microsoft.com ```
+
+  - Fingerprinting:
+    - Nikto: ``` $ Nikto –h www.example.com || $ Nikto -h http://example.com –output Desktop/nikto.html -Format htm ```
+    - Whatweb: ``` $ whatweb www.rsu.ac.in || $ whatweb –a 3 www.rsu.ac.in ```
+    - w3af: web application attack & audit framework (Kali Linux)
+    - Bliendelephant: ``` $ bliendelephant.py -h ```
+    - Asp Auditor: ``` $ Asp-auditor.pl http://www.gtu.ac.in/default.aspx -bf ```
+    - cms-explorer: ``` $ cms-explorer.pl –url http://microsoft.com –type drupal 
+    - joomscan: ``` $ joomscan –u http://www.joom.com/joomla ```
+   
+  - Web Application Firewall:
+    - Waffit: ``` $ wafw00f https://microsoft.com ```
+  
+  - Directory:
+    - cadaver:
+    - w3af:
+  
+  - Load Balancer
+    - lbd: ``` $ lbd www.microsoft.com ```
+    - halberd: ```  halberd www.microsoft.com ```
+  
 
 1.10. Map Application Architecture
 
