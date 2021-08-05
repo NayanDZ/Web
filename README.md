@@ -131,12 +131,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
                     [recon-ng][default][hackertarget] > run 
                
   - Port Scanning (Service Fingerprinting & OS Detection):
-    - Nmap: 
-                    $ nmap –sS –A –PN –p- --script=http-title nano.com
-                      -sS – syn scan
-		                  -A – OS detection + service fingerprint
-		                  -PN – no ping
-		                  -p- – all ports
+    - Nmap: ``` $ nmap –sS –A –PN –p- --script=http-title nano.com [-sS:syn scan, -A:OS detection + service fingerprint, -PN:no ping, -p-: all ports] ```
     - Port scans top 1000 TCP ports: ``` $ nmap 192.168.100.2 ```
     - Port scans all 65535 TCP ports: ``` $ nmap –A –p- 192.168.100.2 ```
     - Port scans top 1000 UDP ports: ``` $ nmap -sU 192.168.100.2 ```
@@ -153,7 +148,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
     - w3af: web application attack & audit framework (Kali Linux)
     - Bliendelephant: ``` $ bliendelephant.py -h ```
     - Asp Auditor: ``` $ Asp-auditor.pl http://www.gtu.ac.in/default.aspx -bf ```
-    - cms-explorer: ``` $ cms-explorer.pl –url http://microsoft.com –type drupal 
+    - cms-explorer: ``` $ cms-explorer.pl –url http://microsoft.com –type drupal ```
     - joomscan: ``` $ joomscan –u http://www.joom.com/joomla ```
    
   - Web Application Firewall:
