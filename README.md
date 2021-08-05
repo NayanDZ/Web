@@ -254,9 +254,9 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 ## 7. Input validation Testing
 
-7.1 Testing for Reflected Cross Site Scripting
+7.1 [Testing for Reflected Cross Site Scripting](https://github.com/NayanDZ/XSS)
 
-7.2 Testing for Stored Cross Site Scripting
+7.2 [Testing for Stored Cross Site Scripting](https://github.com/NayanDZ/XSS)
 
 7.3 Testing for HTTP Verb Tampering
 
@@ -350,11 +350,21 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
     
   
 
-9.2 Testing for Padding Oracle
+***9.2 Testing for Padding Oracle***
+  - A padding oracle is a function of an application which decrypts encrypted data provided by the client, e.g. internal session state stored on the client, and leaks the state of the validity of the padding after decryption. 
+  - The existence of a padding oracle allows an attacker to decrypt encrypted data and encrypt arbitrary data without knowledge of the key used for these cryptographic operations. 
+  - This can lead to leakage of sensible data or to privilege escalation vulnerabilities, if integrity of the encrypted data is assumed by the application.
 
-9.3 Testing for Sensitive information sent via unencrypted channels
-
-
+***9.3 Testing for Sensitive information sent via unencrypted channels***
+  - As a rule of thumb if data must be protected when it is stored,this data must also be protected during transmission. 
+  - Some examples for sensitive data are:
+    - Information used in authentication (e.g. Credentials, PINs, Session identifiers, Tokens, Cookies…)
+    - Information protected by laws, regulations or specific organizational policy (e.g. Credit Cards, Customers data)
+  - If the application transmits sensitive information via unencrypted channels (e.g. HTTP) it is considered a security risk. Ex. are:
+    - Basic authentication which sends authentication credentials in plain-text over HTTP
+    - Form based authentication credentials sent via HTTP
+    - Cookie Containing Session ID Sent over HTTP
+  
 ## 10. Business Logic Testing
 
 10.1 Test Business Logic Data Validation
@@ -377,7 +387,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 ## 11. Client Side Testing
 
-11.1 Testing for DOM based Cross Site Scripting
+11.1 [Testing for DOM based Cross Site Scripting](https://github.com/NayanDZ/XSS)
 
 11.2 Testing for JavaScript Execution
 
@@ -389,11 +399,11 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 11.6 Testing for Client Side Resource Manipulation
 
-11.7 Test Cross Origin Resource Sharing
+11.7 [Test Cross Origin Resource Sharing](https://github.com/NayanDZ/CORS)
 
 11.8 Testing for Cross Site Flashing
 
-11.9 Testing for Clickjacking
+11.9 [Testing for Clickjacking](https://github.com/NayanDZ/clickjacking)
 
 11.10 Testing WebSockets
 
