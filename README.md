@@ -411,3 +411,8 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 11.12 Test Local Storage
 
+## Interception Proxies Tools:
+ * Burp Suite – Burp Suite is an integrated platform for performing security testing of applications.
+ * OWASP ZAP – OWASP Zed Attack Proxy Project is an open-source web application security scanner. It is intended to be used by both those new to application security as well as professional penetration testers.
+ * Fiddler - Fiddler is an HTTP debugging proxy server application which can captures HTTP and HTTPS traffic and logs it for the user to review. Fiddler can also be used to modify HTTP traffic for troubleshooting purposes as it is being sent or received.
+ * Charles Proxy – HTTP proxy / HTTP monitor / Reverse Proxy that enables a developer to view all of the HTTP and SSL / HTTPS traffic between their machine and the Internet.
