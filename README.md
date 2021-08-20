@@ -249,7 +249,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 6.7 Test Session Timeout
 
-6.8 Testing for Session puzzling
+6.8 Testing for Session puzzling (also known as Session Variable Overloading)
 
 
 ## 7. Input validation Testing
