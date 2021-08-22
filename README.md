@@ -347,7 +347,8 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
                $ nmap -p 443 --script ssl-css-injection microsoft.com```
     - SSL-heartbleed: ```$ nmap -p 433 --script ssl-heartbleed microsoft.com```
     - SSL-Poodle: ```$ nmap -sV --version-light --script ssl-poodle -p 443 microsoft.com```
-    
+  - Online SSL scan:
+    - https://www.ssllabs.com/ssltest/
   
 
 ***9.2 Testing for Padding Oracle***
