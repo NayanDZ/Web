@@ -237,7 +237,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 6.1 Testing for Bypassing Session Management Schema
 
-6.2 Testing for Cookies attributes
+6.2 [Testing for Cookies attributes](https://github.com/NayanDZ/Cookie-Attributes)
 
 6.3 Testing for Session Fixation
 
