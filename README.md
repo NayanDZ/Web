@@ -22,7 +22,7 @@ Restrictions on what authenticated users are allowed to do are often not properl
 ### A6:2017 Security Misconfiguration:
 Good security requires having a secure configuration defined and deployed for the application, frameworks, application server, web server, database server, platform, etc. Secure settings should be defined, implemented, and maintained, as defaults are often insecure.
 
-### A7:2017 Cross-Site Scripting (XSS):
+### [A7:2017 Cross-Site Scripting (XSS):](https://github.com//nayandz/xss)
 XSS flaws occur whenever an application includes un-trusted data in a new web page without proper validation or escaping, or updates an existing web page with user supplied data using a browser API that can create JavaScript. 
 XSS allows attackers to execute scripts in the victim’s browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites.
 XSS Type:
