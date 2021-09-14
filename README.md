@@ -30,7 +30,7 @@ XSS Type:
 •	Reflected - Reflected XSS vulnerability exists when data provided by a web client is used immediately by server-side scripts to generate a page of results for that user.
 •	DOM-Based (Document Object Model) - A DOM-based XSS vulnerability exists within a page’s client-side script itself.
 
-### A8:2017 Insecure Deserialization:
+### [A8:2017 Insecure Deserialization:](https://portswigger.net/web-security/deserialization)
 Insecure Deserialization often leads to remote code execution. Even if Deserialization flaws do not result in remote code execution, they can be used to perform attacks, including replay attacks, injection attacks, and privilege escalation attacks.
 
 ### A9:2017 Using Components with Known Vulnerabilities:
