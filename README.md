@@ -315,23 +315,20 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 7.20 Testing for Remote File Inclusion
 
 ***7.21 Testing for Command Injection***
-  OS command injection (a.k. shell injection) is vulnerability that allows an attacker to execute arbitrary OS commands on the server that is running an application, and typically fully compromise the application and all its data.
   
-- Following command separators work on both Windows and Unix-based systems: `&` `&&` `|` `||`
-- Following command separators work only on Unix-based systems: `;` `Newline (0x0a or \n)`
-- Unix-based systems, you can also use backticks or the dollar character to perform inline execution of an injected command within the original command:
-   - ` injected command `
-   -  $( injected command )
-
+OS command injection (a.k. shell injection) is vulnerability that allows an attacker to execute arbitrary OS commands on the server that is running an application, and typically fully compromise the application and all its data.
+  
+- Command separators work on both Windows and Unix-based systems: `&` `&&` `|` `||`
+- Work only on Unix-based systems: `;` `Newline (0x0a or \n)`and use ` ` `(backticks) or `$(injected command)`(dollar) character to perform inline execution of an injected command
 Commands:
-``
-Purpose of command        Linux 	    Windows
-Name of current user 	    whoami 	    whoami
-Operating system 	        uname -a 	  ver
-Network configuration 	  ifconfig 	  ipconfig /all
-Network connections 	    netstat -an netstat -an
-Running processes 	      ps -ef 	    tasklist 
-``
+```
+Purpose of command        Linux         Windows
+Name of current user      whoami        whoami
+Operating system          uname -a      ver
+Network configuration     ifconfig      ipconfig /all
+Network connections       netstat -an   netstat -an
+Running processes         ps -ef        tasklist 
+```
   
   
 7.22 Testing for Buffer overflow
