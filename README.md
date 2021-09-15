@@ -5,7 +5,7 @@
 </p>
 
 ### A1:2017 Injection: 
-Injection flaws, such as SQL, OS, XXE, and LDAP injection occur when un-trusted data is sent to an interpreter as part of a command or query. 
+Injection flaws, such as [SQL](https://github.com/NayanDZ/sql), OS, XXE, and LDAP injection occur when un-trusted data is sent to an interpreter as part of a command or query. 
 
 ### A2:2017 Broken Authentication: 
 Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities.
