@@ -233,21 +233,21 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
   
   For Unix: `../../etc/passwd` is valid within a file path
   
-  If an application strips or blocks directory traversal sequences then it might be possible to bypass the defense using a variety of techniques:
+  If an application blocks directory traversal sequences then bypass using a variety of techniques:
    - Absolute path from the filesystem root: `name=/etc/passwd`
    - Nested traversal sequences: `....// or ....\/`
    - non-standard encodings: `..%c0%af or ..%252f`
    - If application requires user-supplied name must start with the expected base folder: `name=/var/www/images/../../../etc/passwd`
    - If application requires user-supplied name must end with an expected file extension, such as .png: `name=../../../etc/passwd%00.png`
   
-  **Remediation:** 
+      Remediation:
   1. most effective way to prevent file path traversal is to avoid **passing user-supplied input to filesystem**.
   
   2. If it is considered unavoidable to pass user-supplied input:
   
-    - Validate the user input before processing it. Ideally, the validation should compare against a whitelist of permitted values.
+   - Validate the user input before processing it. Ideally, the validation should compare against a whitelist of permitted values.
   
-    - Application should append the input to the base directory and use a platform filesystem API to canonicalize the path
+   - Application should append the input to the base directory and use a platform filesystem API to canonicalize the path
   
 5.2 Testing for bypassing authorization schema
 
