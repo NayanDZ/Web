@@ -237,7 +237,8 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
    - non-standard encodings: `..%c0%af or ..%252f`
    - If application requires user-supplied name must start with the expected base folder: `name=/var/www/images/../../../etc/passwd`
    - If application requires user-supplied name must end with an expected file extension, such as .png: `name=../../../etc/passwd%00.png`
-   Remediation:
+   
+  Remediation:
    1. most effective way to prevent file path traversal is to avoid **passing user-supplied input to filesystem**.
   
    2. If it is considered unavoidable to pass user-supplied input:
