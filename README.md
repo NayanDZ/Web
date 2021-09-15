@@ -225,7 +225,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 ## 5. Authorization Testing 
 
-5.1 Testing Directory traversal/file include
+***5.1 Testing Directory traversal/file include***
   
   Directory traversal (also known as file path traversal) is a vulnerability that allows an attacker to read arbitrary files on the server that is running an application. e.x: back-end systems file, application code & data, credentials and sensitive operating system files.
    
@@ -240,11 +240,13 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
    - If application requires user-supplied name must start with the expected base folder: `name=/var/www/images/../../../etc/passwd`
    - If application requires user-supplied name must end with an expected file extension, such as .png: `name=../../../etc/passwd%00.png`
   
-  Remediation: 
+  **Remediation:** 
   1. most effective way to prevent file path traversal is to avoid **passing user-supplied input to filesystem**.
   
-  2. If it is considered unavoidable to pass user-supplied input: 
+  2. If it is considered unavoidable to pass user-supplied input:
+  
     - Validate the user input before processing it. Ideally, the validation should compare against a whitelist of permitted values.
+  
     - Application should append the input to the base directory and use a platform filesystem API to canonicalize the path
   
 5.2 Testing for bypassing authorization schema
