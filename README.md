@@ -348,7 +348,7 @@ Running processes         ps -ef        tasklist
 
 7.27 Testing for HTTP Splitting/Smuggling
 
-[***7.28 Server-side template injection***](https://portswigger.net/web-security/server-side-template-injection)
+7.28 [**Server-side template injection**](https://portswigger.net/web-security/server-side-template-injection)
   
   An attacker is able to use native template syntax to inject a malicious payload into a template, which is then executed server-side
 
