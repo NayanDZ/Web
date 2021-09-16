@@ -13,7 +13,7 @@ Application functions related to authentication and session management are often
 ### A3:2017 Sensitive Data Exposure:
 Many web applications and APIs do not properly protect sensitive data, such as financial and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged with the browser.
 
-### A4:2017 XML External Entities (XXE):
+### [A4:2017 XML External Entities (XXE):](https://github.com/NayanDZ/xxe)
 Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks.
 
 ### A5:2017 Broken Access Control:
@@ -30,7 +30,7 @@ XSS Type:
 •	Reflected - Reflected XSS vulnerability exists when data provided by a web client is used immediately by server-side scripts to generate a page of results for that user.
 •	DOM-Based (Document Object Model) - A DOM-based XSS vulnerability exists within a page’s client-side script itself.
 
-### [A8:2017 Insecure Deserialization:](https://portswigger.net/web-security/deserialization)
+### [A8:2017 Insecure Deserialization:](https://github.com/NayanDZ/ID)
 Insecure Deserialization often leads to remote code execution. Even if Deserialization flaws do not result in remote code execution, they can be used to perform attacks, including replay attacks, injection attacks, and privilege escalation attacks.
 
 ### A9:2017 Using Components with Known Vulnerabilities:
