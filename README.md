@@ -348,7 +348,7 @@ Running processes         ps -ef        tasklist
 
 7.26 Testing for incubated vulnerabilities
 
-7.27 Testing for HTTP Splitting/Smuggling
+7.27 [Testing for HTTP rewuest smuggling / splitting](https://portswigger.net/web-security/request-smuggling)
 
 7.28 [**Server-side template injection**](https://portswigger.net/web-security/server-side-template-injection)
   
