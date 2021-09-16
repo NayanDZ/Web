@@ -319,7 +319,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 OS command injection (a.k. shell injection) is vulnerability that allows an attacker to execute arbitrary OS commands on the server that is running an application, and typically fully compromise the application and all its data.
   
 - Command separators work on both Windows and Unix-based systems: `&` `&&` `|` `||`
-- Work only on Unix-based systems: `;` `Newline (0x0a or \n)`and use ` ` `(backticks) or `$(injected command)`(dollar) character to perform inline execution of an injected command
+- Work only on Unix-based systems: `;` `Newline (0x0a or \n)`
 Commands:
 ```
 Purpose of command        Linux         Windows
@@ -329,7 +329,12 @@ Network configuration     ifconfig      ipconfig /all
 Network connections       netstat -an   netstat -an
 Running processes         ps -ef        tasklist 
 ```
-  
+ Prevention:
+  - Never call out to OS commands from application-layer code.
+  - Validating against a whitelist of permitted values.
+  - Validating that the input is a number.
+  - Validating that the input contains only alphanumeric characters, no other syntax or whitespace.
+  - Don't sanitize input by escaping shell metacharacters
   
 7.22 Testing for Buffer overflow
 
