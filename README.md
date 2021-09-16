@@ -227,7 +227,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 ## 5. Authorization Testing 
 
-***5.1 Testing Directory traversal/file include***
+**5.1 Testing Directory traversal/file include**
   
   Directory traversal (a.k. file path traversal) is a vulnerability that allows an attacker to read arbitrary files on the server that is running an application. e.x: back-end systems file, application code & data, credentials and sensitive operating system files.
    
@@ -316,7 +316,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 7.20 Testing for Remote File Inclusion
 
-### 7.21 Testing for Command Injection
+**7.21 Testing for Command Injection**
   
 OS command injection (a.k. shell injection) is vulnerability that allows an attacker to execute arbitrary OS commands on the server that is running an application, and typically fully compromise the application and all its data.
   
@@ -364,7 +364,7 @@ Running processes         ps -ef        tasklist
       
 ## 8. Error Handling
 
-***8.1 Analysis of Error Codes***
+**8.1 Analysis of Error Codes**
  - Web Server Errors: A common error that we can see during testing is the HTTP 404 Not Found.
   ![image](https://user-images.githubusercontent.com/65315090/128235946-c405fb72-d3cd-495e-ba89-8b563fb9a3fc.png)
  - Application Server Error: Application errors are returned by the application itself, rather than the web server. These could be error messages from framework code (ASP, JSP etc.) Detailed application errors typically provide information of server paths, installed libraries and application versions.
@@ -372,7 +372,7 @@ Running processes         ps -ef        tasklist
      80004005:- is a generic IIS error code which indicates that it could not establish a connection to its associated database
 - ***Tools:*** ErrorMint
 
-***8.2 Analysis of Stack Traces***
+**8.2 Analysis of Stack Traces**
  - Stack traces are not vulnerabilities by themselves, but they often reveal information that is interesting to an attacker. 
  - Attackers attempt to generate these stack traces by tampering with the input to the web application with malformed HTTP requests and other input data.
  - Some tests to try include:
@@ -386,7 +386,7 @@ Running processes         ps -ef        tasklist
 
 ## 9. Cryptography
 
-9.1 **Testing for Weak SSL/TSL Ciphers, Insufficient Transport Layer Protection**
+**9.1 Testing for Weak SSL/TSL Ciphers, Insufficient Transport Layer Protection**
   - When the SSL/TLS service is present it is good but it following vulnerabilities exist:
     - SSL/TLS protocols, Ciphers, keys and renegotiation must be properly configured.
     - Certificate validity must be ensured:Testing SSL certificate validity – client and server (manually)
@@ -404,12 +404,12 @@ Running processes         ps -ef        tasklist
     - https://www.ssllabs.com/ssltest/
   
 
-9.2 **Testing for Padding Oracle**
+**9.2 Testing for Padding Oracle**
   - A padding oracle is a function of an application which decrypts encrypted data provided by the client, e.g. internal session state stored on the client, and leaks the state of the validity of the padding after decryption. 
   - The existence of a padding oracle allows an attacker to decrypt encrypted data and encrypt arbitrary data without knowledge of the key used for these cryptographic operations. 
   - This can lead to leakage of sensible data or to privilege escalation vulnerabilities, if integrity of the encrypted data is assumed by the application.
 
-9.3 **Testing for Sensitive information sent via unencrypted channels**
+**9.3 Testing for Sensitive information sent via unencrypted channels**
   - As a rule of thumb if data must be protected when it is stored,this data must also be protected during transmission. 
   - Some examples for sensitive data are:
     - Information used in authentication (e.g. Credentials, PINs, Session identifiers, Tokens, Cookies…)
@@ -459,7 +459,7 @@ Running processes         ps -ef        tasklist
 
 11.9 [**Testing for Clickjacking**](https://github.com/NayanDZ/clickjacking)
 
-11.10 **Testing WebSockets**
+**11.10 Testing WebSockets**
   
    WebSockets used in modern web applications. They are initiated over HTTP and provide long-lived connections with asynchronous communication in both directions.
   
