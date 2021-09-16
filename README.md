@@ -316,8 +316,8 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 7.20 Testing for Remote File Inclusion
 
-**7.21 Testing for OS Command Injection**
-  
+[**7.21 Testing for OS Command Injection**](#)
+<a href="#top">7.21 Testing for OS Command Injection</a>  
 OS command injection (a.k. shell injection) is vulnerability that allows an attacker to execute arbitrary OS commands on the server that is running an application, and typically fully compromise the application and all its data.
   
 When you have identified an OS command injection vulnerability execute some initial commands to obtain information about the system that you have compromised.
