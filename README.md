@@ -181,6 +181,8 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 2.7 Test HTTP Strict Transport Security
 
 2.8 Test RIA cross domain policy
+  
+2.9 [HTTP Host header attacks](https://portswigger.net/web-security/host-header)
 
 
 
