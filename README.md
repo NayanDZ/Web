@@ -5,7 +5,7 @@
 </p>
 
 ### A1:2017 Injection: 
-Injection flaws, such as [**SQL**](https://github.com/NayanDZ/sql), [OS Command Injection](https://github.com/NayanDZ/Web/#OSCI), XXE, and LDAP injection occur when un-trusted data is sent to an interpreter as part of a command or query. 
+Injection flaws, such as [**SQL**](https://github.com/NayanDZ/sql), OS Command Injection, XXE, and LDAP injection occur when un-trusted data is sent to an interpreter as part of a command or query. 
 
 ### A2:2017 Broken Authentication: 
 Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities.
@@ -316,7 +316,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 7.20 Testing for Remote File Inclusion
 
-<a href="#OSCI">7.21 Testing for OS Command Injection</a>  
+[**7.21 Testing for OS Command Injection**]
 OS command injection (a.k. shell injection) is vulnerability that allows an attacker to execute arbitrary OS commands on the server that is running an application, and typically fully compromise the application and all its data.
   
 When you have identified an OS command injection vulnerability execute some initial commands to obtain information about the system that you have compromised.
