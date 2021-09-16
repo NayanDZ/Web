@@ -446,8 +446,23 @@ Running processes         ps -ef        tasklist
 
 11.9 [Testing for Clickjacking](https://github.com/NayanDZ/clickjacking)
 
-11.10 Testing WebSockets
+***11.10 Testing WebSockets****
+  
+  WebSockets used in modern web applications. They are initiated over HTTP and provide long-lived connections with asynchronous communication in both directions.
+  
+  WebSockets are used for all kinds of purposes, including performing user actions and transmitting sensitive information
 
+  Example, Chat application uses WebSockets to send messages between the browser and the server. When a user types a message, a WebSocket message like the following is sent to the server: `{"message":"Hello Nayan"} `
+  
+  The contents of the message are transmitted via WebSockets to another chat user, and rendered in the user's browser as follows: `<P>Hello Nayan</P> `
+  
+  In this situation, no other input processing or defenses are in play, an attacker can perform a XSS attack by submitting the following WebSocket message: `{"message":"<img src=1 onerror='alert(1)'>"} `
+  
+  Remediation:
+  - Use the wss:// protocol (WebSockets over TLS).
+  - Hard code the URL of the WebSockets endpoint, and certainly don't incorporate user-controllable data into this URL.
+  - Protect the WebSocket handshake message against CSRF, to avoid cross-site WebSockets hijacking vulnerabilities.
+  
 11.11 Test Web Messaging
 
 11.12 Test Local Storage
