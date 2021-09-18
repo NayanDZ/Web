@@ -276,15 +276,15 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 ## 7. Input validation Testing
 
-7.1 [Testing for Reflected Cross Site Scripting](https://github.com/NayanDZ/XSS)
+7.1 [**Testing for Reflected Cross Site Scripting**](https://github.com/NayanDZ/XSS)
 
-7.2 [Testing for Stored Cross Site Scripting](https://github.com/NayanDZ/XSS)
+7.2 [**Testing for Stored Cross Site Scripting**](https://github.com/NayanDZ/XSS)
 
 7.3 Testing for HTTP Verb Tampering
 
 7.4 Testing for HTTP Parameter pollution
 
-7.5 [Testing for SQL Injection](https://github.com/NayanDZ/SQL/blob/main/README.md)
+7.5 [**Testing for SQL Injection**](https://github.com/NayanDZ/SQL/blob/main/README.md)
 
 7.6 Oracle Testing
 
