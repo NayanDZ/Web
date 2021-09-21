@@ -395,8 +395,7 @@ Running processes         ps -ef        tasklist
     - openssl: ```$ openssl s_client –connect www.facebook.com:443 –showcert```
     - sslyze ( TLS/SSL Implementation Analyzer): ```$ sslyze--regular www.microsoft.com```
     - testssl.sh: ```$ testssl.sh –t smtp smtp.gmail.com:25```
-    - Nmap: ```$nmap --script ssl-enum-ciphers -p 443 microsoft.com
-               $ nmap -p 443 --script ssl-css-injection microsoft.com```
+    - Nmap: ```$ nmap --script ssl-enum-ciphers -p 443 microsoft.com   ||  $ nmap -p 443 --script ssl-css-injection microsoft.com```
     - SSL-heartbleed: ```$ nmap -p 433 --script ssl-heartbleed microsoft.com```
     - SSL-Poodle: ```$ nmap -sV --version-light --script ssl-poodle -p 443 microsoft.com```
   - Online SSL scan:
