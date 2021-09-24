@@ -177,7 +177,14 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 **2.6 Test HTTP Methods:** (HEAD, GET, POST, PUT, DELETE, TRACE, OPTIONS, CONNECT)
 
-2.7 Test HTTP Strict Transport Security
+**2.7 Test HTTP Strict Transport Security:** HSTS header is a mechanism that web sites have to communicate to the web browsers that all traffic exchanged with a given domain must always be sent over HTTPS.
+  
+  HSTS header uses two directives:
+  - max-age: Indicate the number of seconds that the browser should automatically convert all HTTP requests to HTTPS.
+  - includeSubDomains: Indicate that all web application’s subdomains must use HTTPS.
+
+  `` Strict-Transport-Security: max-age=60000; includeSubDomains ``  
+
 
 2.8 Test RIA cross domain policy
   
