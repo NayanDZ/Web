@@ -67,7 +67,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 11. Client Side Testing
 
 ## 1. Information Gathering
-***1.1 Conduct Search Engine Discovery and Reconnaissance for Information Leakage***
+**1.1 Conduct Search Engine Discovery and Reconnaissance for Information Leakage**
 - Search Engine:
   - Shodan: Shodan is a search engines that user find specific types (Computers, web cams, routers, servers, etc.)
   - censys.io: Find and analyze every reachable server and device on the Internet.
@@ -81,7 +81,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 - [Google Search operators](https://moz.com/learn/seo/search-operators)
 - https://gbhackers.com/latest-google-dorks-list
 
-***1.2. Fingerprint Web Server:*** Knowing the version and type of running web server
+**1.2. Fingerprint Web Server:** Knowing the version and type of running web server
   - Tools: 
     - Httprint, Httprecon,
   - Online Testing Sites:
@@ -93,14 +93,13 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
   - Browser Plug-in: wappalyzer (Firefox / Chrome browser Plug-in)
 
 
-***1.3. Review Webserver Metafiles/Webpage Comments for Information Leakage:*** Analyze robots.txt and identify <META> Tags from website.
+**1.3. Review Webserver Metafiles/Webpage Comments for Information Leakage:** Analyze robots.txt and identify <META> Tags from website.
   - Tools:
     - curl: ```$ curl --url https://www.naano.com/robots.txt ```
     - wget: ```$ wget www.nano.com/robots.txt ```
     - Browser “view source” function (Ctrl + U)
 
-
-***1.4. Enumerate Applications on Webserver:*** Find out which particular applications are hosted on a web server
+**1.4. Enumerate Applications on Webserver:** Find out which particular applications are hosted on a web server
       ```$ nmap –PN –sT –sV –p0-65535 192.168.1.100```
   
 1.6. Identify application entry points
@@ -109,7 +108,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 1.8. Fingerprint Web Application Framework
 
-***1.9. Fingerprint Web Application:*** Identify the web application and version to determine known vulnerabilities and the appropriate exploits to use during testing.
+**1.9. Fingerprint Web Application:** Identify the web application and version to determine known vulnerabilities and the appropriate exploits to use during testing.
   - DNS Enumeration:
     - Dnsenum: ```	$ dnsenum Microsoft.com ```
     -	Dnsrecon: ```	$ dnsrecon –d Microsoft.com ```
@@ -176,7 +175,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 2.5 Enumerate Infrastructure and Application Admin Interfaces
 
-2.6 Test HTTP Methods
+**2.6 Test HTTP Methods:** (HEAD, GET, POST, PUT, DELETE, TRACE, OPTIONS, CONNECT)
 
 2.7 Test HTTP Strict Transport Security
 
