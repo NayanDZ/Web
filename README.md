@@ -186,10 +186,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
   `` Strict-Transport-Security: max-age=60000; includeSubDomains ``  
 
 
-**2.8 Test RIA cross domain policy:**Rich Internet Applications (RIA) have adopted Adobe’s crossdomain.xml policy files to allow for controlled cross domain access to data and service consumption using technologies such as Oracle Java, Silverlight, and Adobe Flash. Therefore, a domain can grant remote access to its services from a different domain. (Most RIA applications support crossdomain.xml and Silverlight used clientaccesspolicy.xml)
-  
-  Example: http://website.com/crossdomain.xml 
-
+**2.8 Test RIA cross domain policy:**Rich Internet Applications (RIA) have adopted Adobe’s crossdomain.xml policy files to allow for controlled cross domain access to data and service consumption using technologies such as Oracle Java, Silverlight, and Adobe Flash. Therefore, a domain can grant remote access to its services from a different domain. (Most RIA applications support crossdomain.xml and Silverlight used clientaccesspolicy.xml) [Testing Example: http://website.com/crossdomain.xml] 
 ```
 <cross-domain-policy>
 <allow-access-from domain=”*” />           //(If "*" indicate weak settings in the policies)
