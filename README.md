@@ -275,7 +275,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 
 6.4 Testing for Exposed Session Variables
 
-6.5 Testing for Cross Site Request Forgery
+6.5 [Testing for Cross Site Request Forgery (CSRF)](https://portswigger.net/web-security/csrf)
 
 6.6 Testing for logout functionality
 
