@@ -1,43 +1,102 @@
 # 🌐 Web Application - VAPT   [(OWASP Top 10 - 2021)](https://owasp.org/Top10/)
 
-<p align="center">
-  <img src="owasp.jpeg">
-</p>
+![image](https://user-images.githubusercontent.com/65315090/135478189-b23992d8-2ccf-4e54-9817-495be2c5f34f.png)
 
-### A1:2017 Injection: 
-Injection flaws, such as [**SQL**](https://github.com/NayanDZ/sql), OS Command Injection, XXE, and LDAP injection occur when un-trusted data is sent to an interpreter as part of a command or query. 
+<table>
+  <tr>
+    <td>
+      <b>A1:2017 Injection:</b> Injection flaws, such as <b><a href="https://github.com/NayanDZ/sql">SQL</a></b>, OS Command Injection, XXE, and LDAP injection occur when un-trusted data is sent to an interpreter as part of a command or query. 
+</td>
+    <td>
+      A01:2021-Broken Access Control moves up from the fifth position to the category with the most serious web application security risk; the contributed data indicates that on average, 3.81% of applications tested had one or more Common Weakness Enumerations (CWEs) with more than 318k occurrences of CWEs in this risk category. The 34 CWEs mapped to Broken Access Control had more occurrences in applications than any other category.</td>
+  </tr>
+  
+  <tr>
+    <td>
+      <b>A2:2017 Broken Authentication: </b>
+Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities. 
+    </td>
+    <td>
+    </td>
+  </tr>
 
-### A2:2017 Broken Authentication: 
-Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities.
-
-### A3:2017 Sensitive Data Exposure:
+  <tr>
+  <td>
+    <b>A3:2017 Sensitive Data Exposure:</b>
 Many web applications and APIs do not properly protect sensitive data, such as financial and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged with the browser.
+  </td>
+  <td>
+  </td>
+  </tr>
 
-### [A4:2017 XML External Entities (XXE):](https://github.com/NayanDZ/xxe)
+  <tr>
+  <td>
+    <b><a href="https://github.com/NayanDZ/xxe">A4:2017 XML External Entities (XXE):</a></b>
 Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks.
+  </td>
+  <td>
+  </td>
+  </tr>
 
-### A5:2017 Broken Access Control:
+  <tr>
+  <td>
+    <b>A5:2017 Broken Access Control:</b>
 Restrictions on what authenticated users are allowed to do are often not properly enforced. Attackers can exploit these flaws to access unauthorized functionality or data, such as access other users' accounts, view sensitive files, modify other users’ data, change access rights, etc.
+  </td>
+  <td>
+  </td>
+  </tr>
 
-### A6:2017 Security Misconfiguration:
+  <tr>
+  <td>
+    <b>A6:2017 Security Misconfiguration:</b>
 Good security requires having a secure configuration defined and deployed for the application, frameworks, application server, web server, database server, platform, etc. Secure settings should be defined, implemented, and maintained, as defaults are often insecure.
+  </td>
+  <td>
+  </td>
+  </tr>
 
-### [A7:2017 Cross-Site Scripting (XSS):](https://github.com//nayandz/xss)
+  <tr>
+  <td>
+    <b><a href="https://github.com//nayandz/xss">A7:2017 Cross-Site Scripting (XSS):</a></b>
 XSS flaws occur whenever an application includes un-trusted data in a new web page without proper validation or escaping, or updates an existing web page with user supplied data using a browser API that can create JavaScript. 
 XSS allows attackers to execute scripts in the victim’s browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites.
 XSS Type:
 •	Stored - Stored XSS vulnerability exists when data provided to a web application by a user is first stored persistently on the server.
 •	Reflected - Reflected XSS vulnerability exists when data provided by a web client is used immediately by server-side scripts to generate a page of results for that user.
 •	DOM-Based (Document Object Model) - A DOM-based XSS vulnerability exists within a page’s client-side script itself.
+  </td>
+  <td>
+  </td>
+  </tr>
 
-### [A8:2017 Insecure Deserialization:](https://github.com/NayanDZ/ID)
+  <tr>
+  <td>
+    <b><a href="https://github.com/NayanDZ/ID">A8:2017 Insecure Deserialization:</a></b>
 Insecure Deserialization often leads to remote code execution. Even if Deserialization flaws do not result in remote code execution, they can be used to perform attacks, including replay attacks, injection attacks, and privilege escalation attacks.
+  </td>
+  <td>
+  </td>
+  </tr>
 
-### A9:2017 Using Components with Known Vulnerabilities:
+  <tr>
+  <td>
+    <b>A9:2017 Using Components with Known Vulnerabilities:</b>
 Components, such as libraries, frameworks, and other software modules, run with the same privileges as the application. If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover. Applications and APIs using components with known vulnerabilities may undermine application defenses and enable various attacks and impacts.
+  </td>
+  <td>
+  </td>
+  </tr>
 
-### A10:2017 Insufficient Logging & Monitoring
+  <tr>
+  <td>
+    <b>A10:2017 Insufficient Logging & Monitoring:</b>
 Insufficient logging and monitoring, coupled with missing or ineffective integration with incident response, allows attackers to further attack systems, maintain persistence, pivot to more systems, and tamper, extract, or destroy data. Most breach studies show time to detect a breach is over 200 days, typically detected by external parties rather than internal processes or monitoring.
+  </td>
+  <td>
+  </td>
+  </tr>
+</table>
 
 ## Strategies for VAPT
 1. Reconnaissance (Foot Printing):- Information gathering
