@@ -461,7 +461,7 @@ Running processes         ps -ef        tasklist
 
 11.6 Testing for Client Side Resource Manipulation
 
-11.7 [**Test Cross Origin Resource Sharing**](https://github.com/NayanDZ/CORS)
+11.7 [**Test Cross Origin Resource Sharing (CORS)**](https://github.com/NayanDZ/CORS)
 
 11.8 Testing for Cross Site Flashing
 
