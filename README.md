@@ -244,6 +244,15 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 2.5 Enumerate Infrastructure and Application Admin Interfaces
 
 **2.6 Test HTTP Methods:** (HEAD, GET, POST, PUT, DELETE, TRACE, OPTIONS, CONNECT)
+  
+  | GET  | POST |
+| ------------- | ------------- |
+| GET method use request data in URL  | POST methos use request body for send data to the server  |
+| e.g https://website.com/form.php?name=1&mob=2&add=3  | e.g  https://website.com/form.php HTTP/1.1  |
+|   | name=1&mob=2&add=3  |
+| Data in URL so anyone can see, bookmark, copy or change data  | URL+Request body in HTTP header which is hidden so if URL know but request boady dont know so no one can read, write, data  |
+| 2048 character maximum length of URL  | Unlimited data length because data in request body  |
+|  Only ASCII character can be sent | ASCII, Decimal, Binary all type of data can be sent  |
 
 **2.7 Test HTTP Strict Transport Security:** HSTS header is a mechanism that web sites have to communicate to the web browsers that all traffic exchanged with a given domain must always be sent over HTTPS.
   
