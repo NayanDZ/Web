@@ -17,6 +17,7 @@
 Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities. 
     </td>
     <td>
+      <b>A02:2021-Cryptographic Failures:</b> shifts up one position to #2, previously known as A3:2017-Sensitive Data Exposure, which was broad symptom rather than a root cause. The renewed name focuses on failures related to cryptography as it has been implicitly before. This category often leads to sensitive data exposure or system compromise.
     </td>
   </tr>
 
@@ -26,6 +27,7 @@ Application functions related to authentication and session management are often
 Many web applications and APIs do not properly protect sensitive data, such as financial and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged with the browser.
   </td>
   <td>
+    <b>A03:2021-Injection</b>: slides down to the third position. 94% of the applications were tested for some form of injection with a max incidence rate of 19%, an average incidence rate of 3.37%, and the 33 CWEs mapped into this category have the second most occurrences in applications with 274k occurrences. Cross-site Scripting is now part of this category in this edition.
   </td>
   </tr>
 
@@ -35,6 +37,7 @@ Many web applications and APIs do not properly protect sensitive data, such as f
 Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks.
   </td>
   <td>
+    <b>A04:2021-Insecure Design</b> is a new category for 2021, with a focus on risks related to design flaws. If we genuinely want to "move left" as an industry, we need more threat modeling, secure design patterns and principles, and reference architectures. An insecure design cannot be fixed by a perfect implementation as by definition, needed security controls were never created to defend against specific attacks.
   </td>
   </tr>
 
@@ -44,6 +47,7 @@ Many older or poorly configured XML processors evaluate external entity referenc
 Restrictions on what authenticated users are allowed to do are often not properly enforced. Attackers can exploit these flaws to access unauthorized functionality or data, such as access other users' accounts, view sensitive files, modify other users’ data, change access rights, etc.
   </td>
   <td>
+     <b>A05:2021-Security Misconfiguration</b>: moves up from #6 in the previous edition; 90% of applications were tested for some form of misconfiguration, with an average incidence rate of 4.5%, and over 208k occurrences of CWEs mapped to this risk category. With more shifts into highly configurable software, it's not surprising to see this category move up. The former category for A4:2017-XML External Entities (XXE) is now part of this risk category.
   </td>
   </tr>
 
@@ -53,6 +57,7 @@ Restrictions on what authenticated users are allowed to do are often not properl
 Good security requires having a secure configuration defined and deployed for the application, frameworks, application server, web server, database server, platform, etc. Secure settings should be defined, implemented, and maintained, as defaults are often insecure.
   </td>
   <td>
+   <b>A06:2021-Vulnerable and Outdated Components:</b> was previously titled Using Components with Known Vulnerabilities and is #2 in the Top 10 community survey, but also had enough data to make the Top 10 via data analysis. This category moves up from #9 in 2017 and is a known issue that we struggle to test and assess risk. It is the only category not to have any Common Vulnerability and Exposures (CVEs) mapped to the included CWEs, so a default exploit and impact weights of 5.0 are factored into their scores.
   </td>
   </tr>
 
@@ -67,6 +72,7 @@ XSS Type:
 •	DOM-Based (Document Object Model) - A DOM-based XSS vulnerability exists within a page’s client-side script itself.
   </td>
   <td>
+     <b>A07:2021-Identification and Authentication Failures:</b> was previously Broken Authentication and is sliding down from the second position, and now includes CWEs that are more related to identification failures. This category is still an integral part of the Top 10, but the increased availability of standardized frameworks seems to be helping.
   </td>
   </tr>
 
@@ -76,6 +82,7 @@ XSS Type:
 Insecure Deserialization often leads to remote code execution. Even if Deserialization flaws do not result in remote code execution, they can be used to perform attacks, including replay attacks, injection attacks, and privilege escalation attacks.
   </td>
   <td>
+   <b>A08:2021-Software and Data Integrity Failures:</b> is a new category for 2021, focusing on making assumptions related to software updates, critical data, and CI/CD pipelines without verifying integrity. One of the highest weighted impacts from Common Vulnerability and Exposures/Common Vulnerability Scoring System (CVE/CVSS) data mapped to the 10 CWEs in this category. A8:2017-Insecure Deserialization is now a part of this larger category.
   </td>
   </tr>
 
@@ -85,6 +92,7 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
 Components, such as libraries, frameworks, and other software modules, run with the same privileges as the application. If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover. Applications and APIs using components with known vulnerabilities may undermine application defenses and enable various attacks and impacts.
   </td>
   <td>
+    <b>A09:2021-Security Logging and Monitoring Failures:</b> was previously A10:2017-Insufficient Logging & Monitoring and is added from the Top 10 community survey (#3), moving up from #10 previously. This category is expanded to include more types of failures, is challenging to test for, and isn't well represented in the CVE/CVSS data. However, failures in this category can directly impact visibility, incident alerting, and forensics.
   </td>
   </tr>
 
@@ -94,6 +102,7 @@ Components, such as libraries, frameworks, and other software modules, run with 
 Insufficient logging and monitoring, coupled with missing or ineffective integration with incident response, allows attackers to further attack systems, maintain persistence, pivot to more systems, and tamper, extract, or destroy data. Most breach studies show time to detect a breach is over 200 days, typically detected by external parties rather than internal processes or monitoring.
   </td>
   <td>
+    <b>A10:2021-Server-Side Request Forgery (SSRF):</b> is added from the Top 10 community survey (#1). The data shows a relatively low incidence rate with above average testing coverage, along with above-average ratings for Exploit and Impact potential. This category represents the scenario where the security community members are telling us this is important, even though it's not illustrated in the data at this time.
   </td>
   </tr>
 </table>
