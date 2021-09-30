@@ -247,12 +247,17 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
   
   | GET  | POST |
 | ------------- | ------------- |
-| GET method use request data in URL  | POST methos use request body for send data to the server  |
+| GET method is used to only retrieve data from the server using a given URL  | POST request is used to send data to the server  |
 | e.g:    https://website.com/form.php?name=1&mob=2&add=3  | e.g:    https://website.com/form.php HTTP/1.1 <br /><br />name=1&mob=2&add=3 |
 | Data in URL so anyone can see, bookmark, copy or change data  | URL+Request body in HTTP header which is hidden so if URL know but request boady dont know so no one can read, write, data  |
 | 2048 character maximum length of URL  | Unlimited data length because data in request body  |
-|  Only ASCII character can be sent | ASCII, Decimal, Binary all type of data can be sent  |
+|  Only ASCII(e.g.convert **'** in %27 and **"** in %22) character can be sent | ASCII, Decimal, Binary all type of data can be sent  |
 
+***- HEAD:*** Request used to get only response status and headers information from the server but no body(entity).
+***- TRACE:*** Performs a message loop-back test along the path to the target resource
+***- OPTIONS:*** Method is used to describe the communication options for the target resource
+***- CONNECT:*** Method is used by the client to establish a network connection to a web server over HTTP
+  
 **2.7 Test HTTP Strict Transport Security:** HSTS header is a mechanism that web sites have to communicate to the web browsers that all traffic exchanged with a given domain must always be sent over HTTPS.
   
   HSTS header uses two directives:
