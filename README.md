@@ -1,4 +1,4 @@
-# 🌐 Web Application - VAPT
+# 🌐 Web Application - VAPT   [(OWASP Top 10 - 2021)](https://owasp.org/Top10/)
 
 <p align="center">
   <img src="owasp.jpeg">
