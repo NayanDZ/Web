@@ -248,8 +248,7 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
   | GET  | POST |
 | ------------- | ------------- |
 | GET method use request data in URL  | POST methos use request body for send data to the server  |
-| e.g https://website.com/form.php?name=1&mob=2&add=3  | e.g  https://website.com/form.php HTTP/1.1  |
-|   | name=1&mob=2&add=3  |
+| e.g:    https://website.com/form.php?name=1&mob=2&add=3  | e.g:    https://website.com/form.php HTTP/1.1 <br /><br />name=1&mob=2&add=3 |
 | Data in URL so anyone can see, bookmark, copy or change data  | URL+Request body in HTTP header which is hidden so if URL know but request boady dont know so no one can read, write, data  |
 | 2048 character maximum length of URL  | Unlimited data length because data in request body  |
 |  Only ASCII character can be sent | ASCII, Decimal, Binary all type of data can be sent  |
