@@ -44,13 +44,19 @@ Application functions related to authentication and session management are often
 </td>
 </tr>
 
-  <tr>
-  <td>
-    <b>A3:2017 Sensitive Data Exposure:</b>
-Many web applications and APIs do not properly protect sensitive data, such as financial and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged with the browser.
-  </td>
-  <td>
-    <b>A03:2021-Injection</b>: slides down to the third position. 94% of the applications were tested for some form of injection with a max incidence rate of 19%, an average incidence rate of 3.37%, and the 33 CWEs mapped into this category have the second most occurrences in applications with 274k occurrences. Cross-site Scripting is now part of this category in this edition.
+<tr>
+<td><b>A3:2017 Sensitive Data Exposure:</b>
+Many web applications and APIs do not properly protect sensitive data, such as financial and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged with the browser.</td>
+<td><b><a href="https://owasp.org/Top10/A03_2021-Injection/">A03:2021-Injection</a></b>: 
+
+- Injection occur when User-supplied(un-trusted) data is not validated, filtered, or sanitized by the application.  
+
+- Such as Dynamic queries or non-parameterized calls without context-aware escaping are used directly in the interpreter.
+
+- Common Injections are: <b><a href="https://github.com/NayanDZ/sql">SQL</a></b>, OS Command Injection, XXE, LDAP and  Cross-site Scripting (XSS) is now part of this category.
+
+
+
   </td>
   </tr>
 
