@@ -4,15 +4,26 @@
 <table>
       <tr><th colspan="2"><a href="https://owasp.org/Top10" target="_blank">OWASP Top 10 - 2021</a></th></tr>
 <tr>
-<td colspan="2"><b><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control">A01:2021-Broken Access Control:</a></b> Violation of the principle of least privilege or deny by default, where access should only be granted for particular capabilities, roles, or users, but is available to anyone.
+<td colspan="2"><b><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control">A01:2021-Broken Access Control:</a></b> 
+
+- Violation of the principle of least privilege or deny by default, where access should only be granted for particular capabilities, roles, or users, but is available to anyone.
       
 - Bypassing access control checks by modifying the URL (parameter tampering or force browsing), internal application state, or the HTML page, or by using an attack tool modifying API requests.
+      
 - Permitting viewing or editing someone else's account, by providing its unique identifier (insecure direct object references-IDOR)
+      
 - Accessing API with missing access controls for POST, PUT and DELETE.
+      
 - Elevation of privilege. Acting as a user without being logged in or acting as an admin when logged in as a user.
+      
 - Metadata manipulation, such as replaying or tampering with a JSON Web Token (JWT) access control token, or a cookie or hidden field manipulated to elevate privileges or abusing JWT invalidation.
+      
 - CORS misconfiguration allows API access from unauthorized/untrusted origins.
-- Force browsing to authenticated pages as an unauthenticated user or to privileged pages as a standard user.</td>
+      
+- Force browsing to authenticated pages as an unauthenticated user or to privileged pages as a standard user.
+      
+- <b>A5:2017 Broken Access Control:</b> Restrictions on what authenticated users are allowed to do are often not properly enforced. Attackers can exploit these flaws to access unauthorized functionality or data, such as access other users' accounts, view sensitive files, modify other users’ data, change access rights, etc.
+</td>
 </tr>
 <tr>
 <td colspan="2"><b><a href="https://owasp.org/Top10/A02_2021-Cryptographic_Failures">A02:2021-Cryptographic Failures:</a></b> 
@@ -51,13 +62,10 @@
 
 - Common Injections are: <b><a href="https://github.com/NayanDZ/sql">SQL</a></b>, OS Command Injection, XXE, LDAP and  Cross-site Scripting (XSS) is now part of this category.</td>
 </tr>
-<tr><td colspan="2"><b><a href="https://owasp.org/Top10/A04_2021-Insecure_Design">A04:2021-Insecure Design:</a></b>Insecure design is a broad category representing different weaknesses, expressed as “missing or ineffective control design.” Insecure design is not the source for all other Top 10 risk categories. There is a difference between insecure design and insecure implementation. We differentiate between design flaws and implementation defects for a reason, they have different root causes and remediation. A secure design can still have implementation defects leading to vulnerabilities that may be exploited. An insecure design cannot be fixed by a perfect implementation as by definition, needed security controls were never created to defend against specific attacks. One of the factors that contribute to insecure design is the lack of business risk profiling inherent in the software or system being developed, and thus the failure to determine what level of security design is required.</td>
+<tr><td colspan="2"><b><a href="https://owasp.org/Top10/A04_2021-Insecure_Design">A04:2021-Insecure Design: </a></b>Insecure design is a broad category representing different weaknesses, expressed as “missing or ineffective control design.” Insecure design is not the source for all other Top 10 risk categories. There is a difference between insecure design and insecure implementation. We differentiate between design flaws and implementation defects for a reason, they have different root causes and remediation. A secure design can still have implementation defects leading to vulnerabilities that may be exploited. An insecure design cannot be fixed by a perfect implementation as by definition, needed security controls were never created to defend against specific attacks. One of the factors that contribute to insecure design is the lack of business risk profiling inherent in the software or system being developed, and thus the failure to determine what level of security design is required.</td>
 </tr>
 
-<tr><td><b>A5:2017 Broken Access Control:</b>
-Restrictions on what authenticated users are allowed to do are often not properly enforced. Attackers can exploit these flaws to access unauthorized functionality or data, such as access other users' accounts, view sensitive files, modify other users’ data, change access rights, etc.</td>
-
-<td><b><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration">A05:2021–Security Misconfiguration</a></b>: 
+<tr><td colspan="2"><b><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration">A05:2021–Security Misconfiguration</a></b>: 
 
 - Missing appropriate security hardening across any part of the application stack or improperly configured permissions on cloud services.
       
