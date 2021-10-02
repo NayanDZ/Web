@@ -5,7 +5,7 @@
 <table>
 <tr>
 <td><b>A1:2017 Injection:</b> Injection flaws, such as <b><a href="https://github.com/NayanDZ/sql">SQL</a></b>, OS Command Injection, XXE, and LDAP injection occur when un-trusted data is sent to an interpreter as part of a command or query.</td>
-<td><b>➡️ A01:2021-Broken Access Control:</b> Violation of the principle of least privilege or deny by default, where access should only be granted for particular capabilities, roles, or users, but is available to anyone.
+<td><b><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control">A01:2021-Broken Access Control:</a></b> Violation of the principle of least privilege or deny by default, where access should only be granted for particular capabilities, roles, or users, but is available to anyone.
       
 - Bypassing access control checks by modifying the URL (parameter tampering or force browsing), internal application state, or the HTML page, or by using an attack tool modifying API requests.
 - Permitting viewing or editing someone else's account, by providing its unique identifier (insecure direct object references-IDOR)
@@ -18,7 +18,30 @@
 <tr>
 <td><b>A2:2017 Broken Authentication: </b>
 Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities.</td>
-<td><b>➡️ A02:2021-Cryptographic Failures:</b> shifts up one position to #2, previously known as A3:2017-Sensitive Data Exposure, which was broad symptom rather than a root cause. The renewed name focuses on failures related to cryptography as it has been implicitly before. This category often leads to sensitive data exposure or system compromise.</td>
+<td><b><a href="https://owasp.org/Top10/A02_2021-Cryptographic_Failures">A02:2021-Cryptographic Failures:</a></b> 
+
+- Is any data transmitted in clear text? This concerns protocols such as HTTP, SMTP, FTP also using TLS upgrades like STARTTLS. External internet traffic is hazardous. Verify all internal traffic, e.g., between load balancers, web servers, or back-end systems.
+
+- Are any old or weak cryptographic algorithms or protocols used either by default or in older code?
+
+- Are default crypto keys in use, weak crypto keys generated or re-used, or is proper key management or rotation missing? Are crypto keys checked into source code repositories?
+
+- Is encryption not enforced, e.g., are any HTTP headers (browser) security directives or headers missing?
+
+- Is the received server certificate and the trust chain properly validated?
+
+- Are initialization vectors ignored, reused, or not generated sufficiently secure for the cryptographic mode of operation? Is an insecure mode of operation such as ECB in use? Is encryption used when authenticated encryption is more appropriate?
+
+- Are passwords being used as cryptographic keys in absence of a password base key derivation function?
+
+- Is randomness used for cryptographic purposes that was not designed to meet cryptographic requirements? Even if the correct function is chosen, does it need to be seeded by the developer, and if not, has the developer over-written the strong seeding functionality built into it with a seed that lacks sufficient entropy/unpredictability?
+
+- Are deprecated hash functions such as MD5 or SHA1 in use, or are non-cryptographic hash functions used when cryptographic hash functions are needed?
+
+- Are deprecated cryptographic padding methods such as PCKS number 1 v1.5 in use?
+
+- Are cryptographic error messages or side channel information exploitable, for example in the form of padding oracle attacks?
+</td>
 </tr>
 
   <tr>
