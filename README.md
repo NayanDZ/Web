@@ -4,8 +4,7 @@
 
 <table>
 <tr>
-<td><b>A1:2017 Injection:</b> Injection flaws, such as <b><a href="https://github.com/NayanDZ/sql">SQL</a></b>, OS Command Injection, XXE, and LDAP injection occur when un-trusted data is sent to an interpreter as part of a command or query.</td>
-<td><b><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control">A01:2021-Broken Access Control:</a></b> Violation of the principle of least privilege or deny by default, where access should only be granted for particular capabilities, roles, or users, but is available to anyone.
+<td colspan="2"><b><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control">A01:2021-Broken Access Control:</a></b> Violation of the principle of least privilege or deny by default, where access should only be granted for particular capabilities, roles, or users, but is available to anyone.
       
 - Bypassing access control checks by modifying the URL (parameter tampering or force browsing), internal application state, or the HTML page, or by using an attack tool modifying API requests.
 - Permitting viewing or editing someone else's account, by providing its unique identifier (insecure direct object references-IDOR)
