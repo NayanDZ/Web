@@ -59,10 +59,17 @@ Many older or poorly configured XML processors evaluate external entity referenc
 
 <tr><td><b>A5:2017 Broken Access Control:</b>
 Restrictions on what authenticated users are allowed to do are often not properly enforced. Attackers can exploit these flaws to access unauthorized functionality or data, such as access other users' accounts, view sensitive files, modify other users’ data, change access rights, etc.</td>
-<td>
-     <b>A05:2021-Security Misconfiguration</b>: moves up from #6 in the previous edition; 90% of applications were tested for some form of misconfiguration, with an average incidence rate of 4.5%, and over 208k occurrences of CWEs mapped to this risk category. With more shifts into highly configurable software, it's not surprising to see this category move up. The former category for A4:2017-XML External Entities (XXE) is now part of this risk category.
-  </td>
-  </tr>
+
+<td><b><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration">Security Misconfiguration</a></b>: 
+- Missing appropriate security hardening across any part of the application stack or improperly configured permissions on cloud services.
+- Unnecessary features are enabled or installed (e.g., unnecessary ports, services, pages, accounts, or privileges).
+- Default accounts and their passwords are still enabled and unchanged.
+- Error handling reveals stack traces or other overly informative error messages to users.
+- For upgraded systems, the latest security features are disabled or not configured securely.
+- The security settings in the application servers, application frameworks (e.g., Struts, Spring, ASP.NET), libraries, databases, etc., are not set to secure values.
+- The server does not send security headers or directives, or they are not set to secure values.
+- The software is out of date or vulnerable (see A06:2021-Vulnerable and Outdated Components).
+ </td></tr>
 
   <tr>
   <td>
