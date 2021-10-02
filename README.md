@@ -3,23 +3,23 @@
 ![image](https://user-images.githubusercontent.com/65315090/135478189-b23992d8-2ccf-4e54-9817-495be2c5f34f.png)
 
 <table>
-  <tr>
-    <td>
-      <b>A1:2017 Injection:</b> Injection flaws, such as <b><a href="https://github.com/NayanDZ/sql">SQL</a></b>, OS Command Injection, XXE, and LDAP injection occur when un-trusted data is sent to an interpreter as part of a command or query. 
-</td>
-    <td>
-      A01:2021-Broken Access Control moves up from the fifth position to the category with the most serious web application security risk; the contributed data indicates that on average, 3.81% of applications tested had one or more Common Weakness Enumerations (CWEs) with more than 318k occurrences of CWEs in this risk category. The 34 CWEs mapped to Broken Access Control had more occurrences in applications than any other category.</td>
-  </tr>
-  
-  <tr>
-    <td>
-      <b>A2:2017 Broken Authentication: </b>
-Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities. 
-    </td>
-    <td>
-      <b>A02:2021-Cryptographic Failures:</b> shifts up one position to #2, previously known as A3:2017-Sensitive Data Exposure, which was broad symptom rather than a root cause. The renewed name focuses on failures related to cryptography as it has been implicitly before. This category often leads to sensitive data exposure or system compromise.
-    </td>
-  </tr>
+<tr>
+<td><b>A1:2017 Injection:</b> Injection flaws, such as <b><a href="https://github.com/NayanDZ/sql">SQL</a></b>, OS Command Injection, XXE, and LDAP injection occur when un-trusted data is sent to an interpreter as part of a command or query.</td>
+<td><b>➡️ A01:2021-Broken Access Control:</b> Violation of the principle of least privilege or deny by default, where access should only be granted for particular capabilities, roles, or users, but is available to anyone.
+      
+- Bypassing access control checks by modifying the URL (parameter tampering or force browsing), internal application state, or the HTML page, or by using an attack tool modifying API requests.
+- Permitting viewing or editing someone else's account, by providing its unique identifier (insecure direct object references-IDOR)
+- Accessing API with missing access controls for POST, PUT and DELETE.
+- Elevation of privilege. Acting as a user without being logged in or acting as an admin when logged in as a user.
+- Metadata manipulation, such as replaying or tampering with a JSON Web Token (JWT) access control token, or a cookie or hidden field manipulated to elevate privileges or abusing JWT invalidation.
+- CORS misconfiguration allows API access from unauthorized/untrusted origins.
+- Force browsing to authenticated pages as an unauthenticated user or to privileged pages as a standard user.</td>
+</tr>
+<tr>
+<td><b>A2:2017 Broken Authentication: </b>
+Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities.</td>
+<td><b>➡️ A02:2021-Cryptographic Failures:</b> shifts up one position to #2, previously known as A3:2017-Sensitive Data Exposure, which was broad symptom rather than a root cause. The renewed name focuses on failures related to cryptography as it has been implicitly before. This category often leads to sensitive data exposure or system compromise.</td>
+</tr>
 
   <tr>
   <td>
