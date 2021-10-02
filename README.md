@@ -38,41 +38,28 @@
 - Are deprecated cryptographic padding methods such as PCKS number 1 v1.5 in use?
 
 - Are cryptographic error messages or side channel information exploitable, for example in the form of padding oracle attacks?
+      
+- <b>A3:2017 Sensitive Data Exposure:</b> Many web applications and APIs do not properly protect sensitive data, such as financial and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged with the browser.
 </td>
 </tr>
 
-<tr>
-<td><b>A3:2017 Sensitive Data Exposure:</b>
-Many web applications and APIs do not properly protect sensitive data, such as financial and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged with the browser.</td>
-<td><b><a href="https://owasp.org/Top10/A03_2021-Injection/">A03:2021-Injection</a></b>: 
+<tr><td colspan="2"><b><a href="https://owasp.org/Top10/A03_2021-Injection/">A03:2021-Injection</a></b>: 
 
 - Injection occur when User-supplied(un-trusted) data is not validated, filtered, or sanitized by the application.  
 
 - Such as Dynamic queries or non-parameterized calls without context-aware escaping are used directly in the interpreter.
 
-- Common Injections are: <b><a href="https://github.com/NayanDZ/sql">SQL</a></b>, OS Command Injection, XXE, LDAP and  Cross-site Scripting (XSS) is now part of this category.
+- Common Injections are: <b><a href="https://github.com/NayanDZ/sql">SQL</a></b>, OS Command Injection, XXE, LDAP and  Cross-site Scripting (XSS) is now part of this category.</td>
+</tr>
+<tr><td><b><a href="https://github.com/NayanDZ/xxe">A4:2017 XML External Entities (XXE):</a></b>
+Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks.</td>
 
+<td><b><a href="https://owasp.org/Top10/A04_2021-Insecure_Design">A04:2021-Insecure Design:</a></b>Insecure design is a broad category representing different weaknesses, expressed as “missing or ineffective control design.” Insecure design is not the source for all other Top 10 risk categories. There is a difference between insecure design and insecure implementation. We differentiate between design flaws and implementation defects for a reason, they have different root causes and remediation. A secure design can still have implementation defects leading to vulnerabilities that may be exploited. An insecure design cannot be fixed by a perfect implementation as by definition, needed security controls were never created to defend against specific attacks. One of the factors that contribute to insecure design is the lack of business risk profiling inherent in the software or system being developed, and thus the failure to determine what level of security design is required.</td>
+</tr>
 
-
-  </td>
-  </tr>
-
-  <tr>
-  <td>
-    <b><a href="https://github.com/NayanDZ/xxe">A4:2017 XML External Entities (XXE):</a></b>
-Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks.
-  </td>
-  <td>
-    <b>A04:2021-Insecure Design</b> is a new category for 2021, with a focus on risks related to design flaws. If we genuinely want to "move left" as an industry, we need more threat modeling, secure design patterns and principles, and reference architectures. An insecure design cannot be fixed by a perfect implementation as by definition, needed security controls were never created to defend against specific attacks.
-  </td>
-  </tr>
-
-  <tr>
-  <td>
-    <b>A5:2017 Broken Access Control:</b>
-Restrictions on what authenticated users are allowed to do are often not properly enforced. Attackers can exploit these flaws to access unauthorized functionality or data, such as access other users' accounts, view sensitive files, modify other users’ data, change access rights, etc.
-  </td>
-  <td>
+<tr><td><b>A5:2017 Broken Access Control:</b>
+Restrictions on what authenticated users are allowed to do are often not properly enforced. Attackers can exploit these flaws to access unauthorized functionality or data, such as access other users' accounts, view sensitive files, modify other users’ data, change access rights, etc.</td>
+<td>
      <b>A05:2021-Security Misconfiguration</b>: moves up from #6 in the previous edition; 90% of applications were tested for some form of misconfiguration, with an average incidence rate of 4.5%, and over 208k occurrences of CWEs mapped to this risk category. With more shifts into highly configurable software, it's not surprising to see this category move up. The former category for A4:2017-XML External Entities (XXE) is now part of this risk category.
   </td>
   </tr>
