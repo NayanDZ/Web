@@ -153,8 +153,8 @@ Insufficient logging and monitoring, coupled with missing or ineffective integra
 1. Information Gathering
 2. Configuration and Deployment Management Testing
 3. Identity Management Testing 
-4. Authentication Testing 
-5. Authorization Testing 
+4. Authentication Testing (Authentication is the process of verifying users identity by assuring that the person is the same as what he is claiming for) 
+5. Authorization Testing (Authorization is the process of verifying what they have access to. It means it a way to check if the user has permission to use a resource or not)
 6. Session Management Testing 
 7. Input validation Testing
 8. Error Handling
