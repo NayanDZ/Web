@@ -85,16 +85,27 @@
       
 - <b><a href="https://github.com/NayanDZ/xxe">A4:2017 XML External Entities (XXE):</a></b>
 Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks
-      
+
+- <b>A6:2017 Security Misconfiguration:</b>
+Good security requires having a secure configuration defined and deployed for the application, frameworks, application server, web server, database server, platform, etc. Secure settings should be defined, implemented, and maintained, as defaults are often insecure.      
  </td></tr>
 
-  <tr>
-  <td>
-    <b>A6:2017 Security Misconfiguration:</b>
-Good security requires having a secure configuration defined and deployed for the application, frameworks, application server, web server, database server, platform, etc. Secure settings should be defined, implemented, and maintained, as defaults are often insecure.
-  </td>
-  <td>
-   <b>A06:2021-Vulnerable and Outdated Components:</b> was previously titled Using Components with Known Vulnerabilities and is #2 in the Top 10 community survey, but also had enough data to make the Top 10 via data analysis. This category moves up from #9 in 2017 and is a known issue that we struggle to test and assess risk. It is the only category not to have any Common Vulnerability and Exposures (CVEs) mapped to the included CWEs, so a default exploit and impact weights of 5.0 are factored into their scores.
+<tr><td colspan="2"><b><a href="https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components">A06:2021-Vulnerable and Outdated Components:</a></b> 
+
+- If you do not know the versions of all components you use (both client-side and server-side). This includes components you directly use as well as nested dependencies.
+
+- If the software is vulnerable, unsupported, or out of date. This includes the OS, web/application server, database management system (DBMS), applications, APIs and all components, runtime environments, and libraries.
+
+- If you do not scan for vulnerabilities regularly and subscribe to security bulletins related to the components you use.
+
+- If you do not fix or upgrade the underlying platform, frameworks, and dependencies in a risk-based, timely fashion. This commonly happens in environments when patching is a monthly or quarterly task under change control, leaving organizations open to days or months of unnecessary exposure to fixed vulnerabilities.
+
+- If software developers do not test the compatibility of updated, upgraded, or patched libraries.
+
+- If you do not secure the components’ configurations (see A05:2021-Security Misconfiguration).
+      
+- <b>A9:2017 Using Components with Known Vulnerabilities:</b>
+Components, such as libraries, frameworks, and other software modules, run with the same privileges as the application. If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover. Applications and APIs using components with known vulnerabilities may undermine application defenses and enable various attacks and impacts.
   </td>
   </tr>
 
@@ -122,13 +133,8 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
    <b>A08:2021-Software and Data Integrity Failures:</b> is a new category for 2021, focusing on making assumptions related to software updates, critical data, and CI/CD pipelines without verifying integrity. One of the highest weighted impacts from Common Vulnerability and Exposures/Common Vulnerability Scoring System (CVE/CVSS) data mapped to the 10 CWEs in this category. A8:2017-Insecure Deserialization is now a part of this larger category.
   </td>
   </tr>
-
-  <tr>
-  <td>
-    <b>A9:2017 Using Components with Known Vulnerabilities:</b>
-Components, such as libraries, frameworks, and other software modules, run with the same privileges as the application. If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover. Applications and APIs using components with known vulnerabilities may undermine application defenses and enable various attacks and impacts.
-  </td>
-  <td>
+<tr>
+<td colspan="2">
     <b>A09:2021-Security Logging and Monitoring Failures:</b> was previously A10:2017-Insufficient Logging & Monitoring and is added from the Top 10 community survey (#3), moving up from #10 previously. This category is expanded to include more types of failures, is challenging to test for, and isn't well represented in the CVE/CVSS data. However, failures in this category can directly impact visibility, incident alerting, and forensics.
   </td>
   </tr>
