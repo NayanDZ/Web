@@ -60,7 +60,7 @@
 
 - Such as Dynamic queries or non-parameterized calls without context-aware escaping are used directly in the interpreter.
 
-- Common Injections are: <b><a href="https://github.com/NayanDZ/sql">SQL</a></b>, OS Command Injection, XXE, LDAP and  Cross-site Scripting (XSS) is now part of this category.</td>
+- Common Injections are: <b><a href="https://github.com/NayanDZ/sql">SQL</a></b>, OS Command Injection, XXE, LDAP and <b><a href="https://github.com//nayandz/xss">Cross-Site Scripting (XSS):</a></b></td>
 </tr>
 <tr><td colspan="2"><b><a href="https://owasp.org/Top10/A04_2021-Insecure_Design">A04:2021-Insecure Design: </a></b>Insecure design is a broad category representing different weaknesses, expressed as “missing or ineffective control design.” Insecure design is not the source for all other Top 10 risk categories. There is a difference between insecure design and insecure implementation. We differentiate between design flaws and implementation defects for a reason, they have different root causes and remediation. A secure design can still have implementation defects leading to vulnerabilities that may be exploited. An insecure design cannot be fixed by a perfect implementation as by definition, needed security controls were never created to defend against specific attacks. One of the factors that contribute to insecure design is the lack of business risk profiling inherent in the software or system being developed, and thus the failure to determine what level of security design is required.</td>
 </tr>
@@ -110,16 +110,7 @@ Components, such as libraries, frameworks, and other software modules, run with 
   </tr>
 
   <tr>
-  <td>
-    <b><a href="https://github.com//nayandz/xss">A7:2017 Cross-Site Scripting (XSS):</a></b>
-XSS flaws occur whenever an application includes un-trusted data in a new web page without proper validation or escaping, or updates an existing web page with user supplied data using a browser API that can create JavaScript. 
-XSS allows attackers to execute scripts in the victim’s browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites.
-XSS Type:
-•	Stored - Stored XSS vulnerability exists when data provided to a web application by a user is first stored persistently on the server.
-•	Reflected - Reflected XSS vulnerability exists when data provided by a web client is used immediately by server-side scripts to generate a page of results for that user.
-•	DOM-Based (Document Object Model) - A DOM-based XSS vulnerability exists within a page’s client-side script itself.
-  </td>
-  <td>
+    <td colspan="2">
      <b>A07:2021-Identification and Authentication Failures:</b> was previously Broken Authentication and is sliding down from the second position, and now includes CWEs that are more related to identification failures. This category is still an integral part of the Top 10, but the increased availability of standardized frameworks seems to be helping.
   </td>
   </tr>
