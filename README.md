@@ -51,24 +51,33 @@
 
 - Common Injections are: <b><a href="https://github.com/NayanDZ/sql">SQL</a></b>, OS Command Injection, XXE, LDAP and  Cross-site Scripting (XSS) is now part of this category.</td>
 </tr>
-<tr><td><b><a href="https://github.com/NayanDZ/xxe">A4:2017 XML External Entities (XXE):</a></b>
-Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks.</td>
-
-<td><b><a href="https://owasp.org/Top10/A04_2021-Insecure_Design">A04:2021-Insecure Design:</a></b>Insecure design is a broad category representing different weaknesses, expressed as “missing or ineffective control design.” Insecure design is not the source for all other Top 10 risk categories. There is a difference between insecure design and insecure implementation. We differentiate between design flaws and implementation defects for a reason, they have different root causes and remediation. A secure design can still have implementation defects leading to vulnerabilities that may be exploited. An insecure design cannot be fixed by a perfect implementation as by definition, needed security controls were never created to defend against specific attacks. One of the factors that contribute to insecure design is the lack of business risk profiling inherent in the software or system being developed, and thus the failure to determine what level of security design is required.</td>
+<tr><td colspan="2"><b><a href="https://owasp.org/Top10/A04_2021-Insecure_Design">A04:2021-Insecure Design:</a></b>Insecure design is a broad category representing different weaknesses, expressed as “missing or ineffective control design.” Insecure design is not the source for all other Top 10 risk categories. There is a difference between insecure design and insecure implementation. We differentiate between design flaws and implementation defects for a reason, they have different root causes and remediation. A secure design can still have implementation defects leading to vulnerabilities that may be exploited. An insecure design cannot be fixed by a perfect implementation as by definition, needed security controls were never created to defend against specific attacks. One of the factors that contribute to insecure design is the lack of business risk profiling inherent in the software or system being developed, and thus the failure to determine what level of security design is required.</td>
 </tr>
 
 <tr><td><b>A5:2017 Broken Access Control:</b>
 Restrictions on what authenticated users are allowed to do are often not properly enforced. Attackers can exploit these flaws to access unauthorized functionality or data, such as access other users' accounts, view sensitive files, modify other users’ data, change access rights, etc.</td>
 
-<td><b><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration">Security Misconfiguration</a></b>: 
+<td><b><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration">A05:2021–Security Misconfiguration</a></b>: 
+
 - Missing appropriate security hardening across any part of the application stack or improperly configured permissions on cloud services.
+      
 - Unnecessary features are enabled or installed (e.g., unnecessary ports, services, pages, accounts, or privileges).
+      
 - Default accounts and their passwords are still enabled and unchanged.
+      
 - Error handling reveals stack traces or other overly informative error messages to users.
+      
 - For upgraded systems, the latest security features are disabled or not configured securely.
+      
 - The security settings in the application servers, application frameworks (e.g., Struts, Spring, ASP.NET), libraries, databases, etc., are not set to secure values.
+
 - The server does not send security headers or directives, or they are not set to secure values.
+
 - The software is out of date or vulnerable (see A06:2021-Vulnerable and Outdated Components).
+      
+- <b><a href="https://github.com/NayanDZ/xxe">A4:2017 XML External Entities (XXE):</a></b>
+Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks
+      
  </td></tr>
 
   <tr>
