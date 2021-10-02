@@ -1,8 +1,8 @@
-# 🌐 Web Application - VAPT   [(OWASP Top 10 - 2021)](https://owasp.org/Top10/)
-
+# 🌐 Web Application - VAPT   
 ![image](https://user-images.githubusercontent.com/65315090/135478189-b23992d8-2ccf-4e54-9817-495be2c5f34f.png)
 
 <table>
+      <tr><th colspan="2"><a href="https://owasp.org/Top10/">OWASP Top 10 - 2021</a></th></tr>
 <tr>
 <td colspan="2"><b><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control">A01:2021-Broken Access Control:</a></b> Violation of the principle of least privilege or deny by default, where access should only be granted for particular capabilities, roles, or users, but is available to anyone.
       
@@ -15,9 +15,7 @@
 - Force browsing to authenticated pages as an unauthenticated user or to privileged pages as a standard user.</td>
 </tr>
 <tr>
-<td><b>A2:2017 Broken Authentication: </b>
-Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities.</td>
-<td><b><a href="https://owasp.org/Top10/A02_2021-Cryptographic_Failures">A02:2021-Cryptographic Failures:</a></b> 
+<td colspan="2"><b><a href="https://owasp.org/Top10/A02_2021-Cryptographic_Failures">A02:2021-Cryptographic Failures:</a></b> 
 
 - Is any data transmitted in clear text? This concerns protocols such as HTTP, SMTP, FTP also using TLS upgrades like STARTTLS. External internet traffic is hazardous. Verify all internal traffic, e.g., between load balancers, web servers, or back-end systems.
 
