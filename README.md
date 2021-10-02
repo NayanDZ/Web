@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/65315090/135478189-b23992d8-2ccf-4e54-9817-495be2c5f34f.png)
 
 <table>
-      <tr><th colspan="2"><a href="https://owasp.org/Top10/">OWASP Top 10 - 2021</a></th></tr>
+      <tr><th colspan="2"><a href="https://owasp.org/Top10/" target="_blank">OWASP Top 10 - 2021</a></th></tr>
 <tr>
 <td colspan="2"><b><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control">A01:2021-Broken Access Control:</a></b> Violation of the principle of least privilege or deny by default, where access should only be granted for particular capabilities, roles, or users, but is available to anyone.
       
