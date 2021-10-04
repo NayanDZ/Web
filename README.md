@@ -122,23 +122,20 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
   </tr>
 <tr>
 <td colspan="2">
-    <b>A09:2021-Security Logging and Monitoring Failures:</b> was previously A10:2017-Insufficient Logging & Monitoring and is added from the Top 10 community survey (#3), moving up from #10 previously. This category is expanded to include more types of failures, is challenging to test for, and isn't well represented in the CVE/CVSS data. However, failures in this category can directly impact visibility, incident alerting, and forensics.
-  </td>
-  </tr>
-
-  <tr>
-  <td>
-<b><a href="https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures">A10:2017 Insufficient Logging & Monitoring:</a></b>
-
+<b><a href="https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures">A09:2021-Security Logging and Monitoring Failures:</a></b> ⬅️A10:2017 Insufficient Logging & Monitoring
+      
 - Auditable events, such as logins, failed logins, and high-value transactions, are not logged.
 - Warnings and errors generate no, inadequate, or unclear log messages.
 - Logs of applications and APIs are not monitored for suspicious activity.
 - Logs are only stored locally.
 - Appropriate alerting thresholds and response escalation processes are not in place or effective.
 - Penetration testing and scans by dynamic application security testing (DAST) tools (such as OWASP ZAP) do not trigger alerts.
-- The application cannot detect, escalate, or alert for active attacks in real-time or near real-time.</td>
- <td>
-    <b>A10:2021-Server-Side Request Forgery (SSRF):</b> is added from the Top 10 community survey (#1). The data shows a relatively low incidence rate with above average testing coverage, along with above-average ratings for Exploit and Impact potential. This category represents the scenario where the security community members are telling us this is important, even though it's not illustrated in the data at this time.
+- The application cannot detect, escalate, or alert for active attacks in real-time or near real-time.
+
+
+</td></tr>      
+<tr><td>
+<b><a href="https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/">A10:2021-Server-Side Request Forgery (SSRF):</a></b> SSRF flaws occur whenever a web application is fetching a remote resource without validating the user-supplied URL. It allows an attacker to coerce the application to send a crafted request to an unexpected destination, even when protected by a firewall, VPN, or another type of network access control list (ACL).
   </td>
   </tr>
 </table>
