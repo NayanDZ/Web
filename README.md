@@ -128,10 +128,16 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
 
   <tr>
   <td>
-    <b>A10:2017 Insufficient Logging & Monitoring:</b>
-Insufficient logging and monitoring, coupled with missing or ineffective integration with incident response, allows attackers to further attack systems, maintain persistence, pivot to more systems, and tamper, extract, or destroy data. Most breach studies show time to detect a breach is over 200 days, typically detected by external parties rather than internal processes or monitoring.
-  </td>
-  <td>
+<b><a href="https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures">A10:2017 Insufficient Logging & Monitoring:</a></b>
+
+- Auditable events, such as logins, failed logins, and high-value transactions, are not logged.
+- Warnings and errors generate no, inadequate, or unclear log messages.
+- Logs of applications and APIs are not monitored for suspicious activity.
+- Logs are only stored locally.
+- Appropriate alerting thresholds and response escalation processes are not in place or effective.
+- Penetration testing and scans by dynamic application security testing (DAST) tools (such as OWASP ZAP) do not trigger alerts.
+- The application cannot detect, escalate, or alert for active attacks in real-time or near real-time.</td>
+ <td>
     <b>A10:2021-Server-Side Request Forgery (SSRF):</b> is added from the Top 10 community survey (#1). The data shows a relatively low incidence rate with above average testing coverage, along with above-average ratings for Exploit and Impact potential. This category represents the scenario where the security community members are telling us this is important, even though it's not illustrated in the data at this time.
   </td>
   </tr>
