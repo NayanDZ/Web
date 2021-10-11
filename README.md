@@ -287,8 +287,11 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
 |  Only ASCII(e.g.convert **'** in %27 and **"** in %22) character can be sent | ASCII, Decimal, Binary all type of data can be sent  |
 
 ***- HEAD:*** Request used to get only response status and headers information from the server but no body(entity).
-***- TRACE:*** Performs a message loop-back test along the path to the target resource
-***- OPTIONS:*** Method is used to describe the communication options for the target resource
+      
+***- TRACE:*** Performs a message loop-back test along the path to the target resource.
+      
+***- OPTIONS:*** Method is used to describe the communication options for the target resource.
+      
 ***- CONNECT:*** Method is used by the client to establish a network connection to a web server over HTTP
   
 **2.7 Test HTTP Strict Transport Security:** HSTS header is a mechanism that web sites have to communicate to the web browsers that all traffic exchanged with a given domain must always be sent over HTTPS.
