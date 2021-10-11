@@ -135,7 +135,7 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
 
 </td></tr>      
 <tr><td>
-<b><a href="https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/">A10:2021-Server-Side Request Forgery (SSRF):</a></b> SSRF flaws occur whenever a web application is fetching a remote resource without validating the user-supplied URL. It allows an attacker to coerce the application to send a crafted request to an unexpected destination, even when protected by a firewall, VPN, or another type of network access control list (ACL).
+<b><a href="https://github.com/NayanDZ/SSRF/blob/main/README.md">A10:2021-Server-Side Request Forgery</a> <a href="https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/">(SSRF):</a></b> SSRF flaws occur whenever a web application is fetching a remote resource without validating the user-supplied URL. It allows an attacker to coerce the application to send a crafted request to an unexpected destination, even when protected by a firewall, VPN, or another type of network access control list (ACL).
   </td>
   </tr>
 </table>
