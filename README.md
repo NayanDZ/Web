@@ -309,7 +309,7 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
 <allow-access-from domain=”*” />           //(If "*" indicate weak settings in the policies)
 </cross-domain-policy>
 ```
-2.9 [HTTP Host header attacks](https://portswigger.net/web-security/host-header)
+2.9 [HTTP Host header attacks](https://github.com/NayanDZ/HHI/blob/main/README.md)
 
 
 
