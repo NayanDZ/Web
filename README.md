@@ -255,6 +255,7 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
     - Waffit: ``` $ wafw00f https://microsoft.com ```
   
   - Directory:
+    - dirb: ``` $ dirb URL/Hostname/IP ```
     - cadaver:
     - w3af:
   
