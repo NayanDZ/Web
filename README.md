@@ -170,15 +170,13 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
 ## 1. Information Gathering
 **1.1 Conduct Search Engine Discovery and Reconnaissance for Information Leakage**
 - Search Engine:
-  - Shodan: Shodan is a search engines that user find specific types (Computers, web cams, routers, servers, etc.)
-  - censys.io: Find and analyze every reachable server and device on the Internet.
-  - PunkSpider:	Global web application vulnerability search engine. Deeper, faster, harder scans
-  - binsearch.info: News Groups Search
-  - Duck Duck Go:	does not collect or share personal information
-  - ixquick/Startpage: Combines the top ten results from multiple search engines
-  - Builtwith.com: Find out what websites are Built With
-  - OSINT Framework: OSINT Framework to perform various recon techniques on Companies, People, Phone Number, Bitcoin Addresses, etc., 
-- Google Hacking Database
+  - OSINT Framework(https://osintframework.com/): OSINT Framework to perform various recon techniques on Companies, People, Phone Number, Bitcoin Addresses, etc., 
+  - [Shodan](https://www.shodan.io/): Shodan is a search engines that user find specific types (Computers, web cams, routers, servers, etc.)
+  - [Duck Duck Go](https://duckduckgo.com/): does not collect or share personal information
+  - [Startpage](https://www.startpage.com/)(ixquick): Combines the top ten results from multiple search engines
+  - [Builtwith.com](https://builtwith.com/): Find out what websites are Built With
+  - PunkSpider: Global web application vulnerability search engine. Deeper, faster, harder scans
+- [Google Hacking Database](https://www.exploit-db.com/google-hacking-database)
 - [Google Search operators](https://moz.com/learn/seo/search-operators)
 - https://gbhackers.com/latest-google-dorks-list
 
