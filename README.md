@@ -209,6 +209,12 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
 1.8. Fingerprint Web Application Framework
 
 **1.9. Fingerprint Web Application:** Identify the web application and version to determine known vulnerabilities and the appropriate exploits to use during testing.
+      
+  - WHOIS:(pronounced as the phrase who is) is a query and response protocol that is widely used for querying databases that store the registered users or assignees of an Internet resource, such as a domain name, an IP address block, or an autonomous system, but is also used for a wider range of other information.
+    - whois: ``` $ whois example.com ```
+    - [gwhois](https://gwhois.org/): authoritative Whois lookups for domain names and IP addresses, DNS tools and more.
+    - GeoIP lookup:[Maxmind](https://www.maxmind.com/en/locate-my-ip-address) 
+      
   - DNS Enumeration:
     - Dnsenum: ```	$ dnsenum Microsoft.com ```
     -	Dnsrecon: ```	$ dnsrecon –d Microsoft.com ```
@@ -216,7 +222,7 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
     - Knock: Sub domain brute forcing ``` $ knockpy Microsoft.com ```
     - Dmitry: ```	$ Dmitry -winsepfb -o test.txt Microsoft.com ```
      - dig: ``` dig microsoft.com ```
-    - whois: ``` $ whois example.com ```
+    
     - recon-ng: https://hackertarget.com/recon-ng-tutorial
                     
                     $ recon-ng
