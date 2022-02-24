@@ -253,9 +253,10 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
     - w3af: web application attack & audit framework (Kali Linux)
     - Bliendelephant: ``` $ bliendelephant.py -h ```
     - Asp Auditor: ``` $ Asp-auditor.pl http://www.gtu.ac.in/default.aspx -bf ```
+    - WPScan: ``` $ wpscan --url www.rsu.ac.in ```
     - cms-explorer: ``` $ cms-explorer.pl –url http://microsoft.com –type drupal ```
     - joomscan: ``` $ joomscan –u http://www.joom.com/joomla ```
-   
+    
   - Web Application Firewall:
     - Waffit: ``` $ wafw00f https://microsoft.com ```
   
