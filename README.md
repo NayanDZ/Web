@@ -241,7 +241,22 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
     - Port scans all 65535 TCP ports: ``` $ nmap –A –p- 192.168.100.2 ```
     - Port scans top 1000 UDP ports: ``` $ nmap -sU 192.168.100.2 ```
     - Port scans all 65535 UDP ports: ``` $ nmap –sU -p- -A 192.168.100.2 ```
-
+  - unicornscan: Unicornscan is an asynchronous network stimulus delivery/response recording tool. Meaning it sends out broken/unorganized/fragmented packets (without a regular pattern unlike other port scanning tools) to a host and waits for the target's response.
+  
+  - SSL Scan
+    - sslscan: ``` $ sslscan 127.0.0.1 ```
+    - sslyze: ``` $ sslyze --regular www.example.com ```
+    - tlssled: ``` $ tlssled 192.168.1.1 443 ```
+    - Nmap scripts: 
+      ``` 
+      $ nmap nmap -sV -sC <target>        //Script ssl-cert -Retrieves a server's SSL certificate
+      $ nmap -sV --script ssl-enum-ciphers -p 443 <host> 
+      $ nmap -sV --version-light --script ssl-poodle -p 443 <host>
+      $ nmap -p 443 --script ssl-heartbleed <target>
+      $ nmap -p 443 --script ssl-ccs-injection <target>     //Detects whether a server is vulnerable to the SSL/TLS "CCS Injection" vulnerability
+      $ nmap -p 443 --script ssl-cert-intaddr <target>      //Reports any private IPv4 addresses found in the various fields of an SSL service's certificate.
+      ```
+      
   - Traceroute:
     - LFT: ``` $ lft –s Microsoft.com ```
     - tcptraceroute: ``` $ tcptraceroute Microsoft.com 433 ```
