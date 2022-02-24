@@ -193,7 +193,7 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
   - Browser Plug-in: wappalyzer (Firefox / Chrome browser Plug-in)
 
 
-**1.3. Review Webserver Metafiles/Webpage Comments for Information Leakage:** Analyze robots.txt and identify <META> Tags from website.
+**1.3. Review Webserver Metafiles/Webpage Comments for Information Leakage:** Analyze robots.txt, sitemap.xml, crossdomain.xml and identify <META> Tags from website.
   - Tools:
     - curl: ```$ curl --url https://www.naano.com/robots.txt ```
     - wget: ```$ wget www.nano.com/robots.txt ```
@@ -261,6 +261,7 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
   
   - Directory:
     - dirb: ``` $ dirb URL/Hostname/IP ```
+    - dirbuster
     - cadaver:
     - w3af:
   
