@@ -243,7 +243,7 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
     - Port scans all 65535 UDP ports: ``` $ nmap –sU -p- -A 192.168.100.2 ```
   - unicornscan: Unicornscan is an asynchronous network stimulus delivery/response recording tool. Meaning it sends out broken/unorganized/fragmented packets (without a regular pattern unlike other port scanning tools) to a host and waits for the target's response.
   
-  - SSL Scan
+  - SSL Scan:
     - sslscan: ``` $ sslscan 127.0.0.1 ```
     - sslyze: ``` $ sslyze --regular www.example.com ```
     - tlssled: ``` $ tlssled 192.168.1.1 443 ```
