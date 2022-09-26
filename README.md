@@ -241,6 +241,9 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
     - Port scans all 65535 TCP ports: ``` $ nmap –A –p- 192.168.100.2 ```
     - Port scans top 1000 UDP ports: ``` $ nmap -sU 192.168.100.2 ```
     - Port scans all 65535 UDP ports: ``` $ nmap –sU -p- -A 192.168.100.2 ```
+    - nmap -sn 69.164.124.128/25 --disable-arp-ping -oN 69.164.124.128_25.txt
+    - TCP: sudo nmap -Pn -n -T4 -sV -sS -p- --max-hostgroup 4 --open --script vuln -iL set1.txt -oA TCP_set1
+    - UDP: sudo nmap -Pn -n -T4 -sV -sU -p 21,22,23,25,49,53,67-69,80,88,123-139,143,389,443-445,3389,  --max-hostgroup 4 --open --script vuln -iL set2.txt -oA UDP_set2
   - unicornscan: Unicornscan is an asynchronous network stimulus delivery/response recording tool. Meaning it sends out broken/unorganized/fragmented packets (without a regular pattern unlike other port scanning tools) to a host and waits for the target's response.
   
   - SSL Scan:
