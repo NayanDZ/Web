@@ -217,7 +217,7 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
       
   - DNS Enumeration:
     - nslookup: ``` $ nslookup Microsoft.com {-type=A (DNS A Record)  -type=mx (Mail server), -type=TXT (DNS TXT Records) -type=soa (Technical information), -type=any (all available) } ```
-    - dig: ``` dig microsoft.com **A** (DNS A record) | dig microsoft.com MX (DNS MX record) | dig microsoft.com TXT (DNS TXT record)} ```
+    - dig: ``` dig microsoft.com A (DNS A record) | dig microsoft.com MX (DNS MX record) | dig microsoft.com TXT (DNS TXT record)} ```
     - Dnsenum: ```	$ dnsenum Microsoft.com ```
     -	Dnsrecon: ```	$ dnsrecon –d Microsoft.com ```
     - Knock: Sub domain brute forcing ``` $ knockpy Microsoft.com ```
