@@ -216,13 +216,13 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
     - GeoIP lookup:[Maxmind](https://www.maxmind.com/en/locate-my-ip-address) 
       
   - DNS Enumeration:
+    - nslookup: ``` $ nslookup Microsoft.com {-type=A (DNS A Record)  -type=mx (Mail server), -type=TXT (DNS TXT Records) -type=soa (Technical information), -type=any (all available) } ```
+    - dig: ``` dig microsoft.com **A** (DNS A record) | dig microsoft.com MX (DNS MX record) | dig microsoft.com TXT (DNS TXT record)} ```
     - Dnsenum: ```	$ dnsenum Microsoft.com ```
     -	Dnsrecon: ```	$ dnsrecon –d Microsoft.com ```
-    - nslookup: ``` $ nslookup Microsoft.com {-type=mx (Mail server), -type=soa (Technical information), -type=any (all available)} ```
     - Knock: Sub domain brute forcing ``` $ knockpy Microsoft.com ```
     - Dmitry: ```	$ Dmitry -winsepfb -o test.txt Microsoft.com ```
-     - dig: ``` dig microsoft.com ```
-    
+       
     - recon-ng: https://hackertarget.com/recon-ng-tutorial
                     
                     $ recon-ng
