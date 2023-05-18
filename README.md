@@ -84,11 +84,7 @@
 - The software is out of date or vulnerable (see A06:2021-Vulnerable and Outdated Components).
       
 - <b><a href="https://github.com/NayanDZ/xxe">A4:2017 XML External Entities (XXE):</a></b>
-Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks
-
-- <b>A6:2017 Security Misconfiguration:</b>
-Good security requires having a secure configuration defined and deployed for the application, frameworks, application server, web server, database server, platform, etc. Secure settings should be defined, implemented, and maintained, as defaults are often insecure.      
- </td></tr>
+Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks.
 
 <tr><td colspan="2"><b><a href="https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components">A06:2021-Vulnerable and Outdated Components:</a></b> 
 
