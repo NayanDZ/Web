@@ -125,11 +125,9 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
 - Logs of applications and APIs are not monitored for suspicious activity.
 - Logs are only stored locally.
 - Appropriate alerting thresholds and response escalation processes are not in place or effective.
-- Penetration testing and scans by dynamic application security testing (DAST) tools (such as OWASP ZAP) do not trigger alerts.
-- The application cannot detect, escalate, or alert for active attacks in real-time or near real-time.
 
 
-</td></tr>      
+<td></tr>      
 <tr><td>
 <b><a href="https://github.com/NayanDZ/SSRF/blob/main/README.md">A10:2021-Server-Side Request Forgery</a> <a href="https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/">(SSRF):</a></b> SSRF flaws occur whenever a web application is fetching a remote resource without validating the user-supplied URL. It allows an attacker to coerce the application to send a crafted request to an unexpected destination, even when protected by a firewall, VPN, or another type of network access control list (ACL).
   </td>
