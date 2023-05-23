@@ -110,7 +110,7 @@ Many older or poorly configured XML processors evaluate external entity referenc
      <b>A07:2021-Identification and Authentication Failures:</b> was previously Broken Authentication and is sliding down from the second position, and now includes CWEs that are more related to identification failures. This category is still an integral part of the Top 10, but the increased availability of standardized frameworks seems to be helping.
   </td>
   </tr>
-<tr><td colspan="2"><b>A08:2021-Software and Data Integrity Failures:</b> is a new category for 2021, focusing on making assumptions related to software updates, critical data, and CI/CD pipelines without verifying integrity. One of the highest weighted impacts from Common Vulnerability and Exposures/Common Vulnerability Scoring System (CVE/CVSS) data mapped to the 10 CWEs in this category. A8:2017-Insecure Deserialization is now a part of this larger category.
+<tr><td colspan="2"><b>A08:2021-Software and Data Integrity Failures:</b> is a new category for 2021, focusing on making assumptions related to software updates, critical data, and CI/CD pipelines without verifying integrity. One of the highest weighted impacts from Common Vulnerability and Exposures/Common Vulnerability Scoring System (CVE/CVSS) data mapped to the 10 CWEs in this category.
       
 - <b><a href="https://github.com/NayanDZ/ID">A8:2017 Insecure Deserialization:</a></b>
 Insecure Deserialization often leads to remote code execution. Even if Deserialization flaws do not result in remote code execution, they can be used to perform attacks, including replay attacks, injection attacks, and privilege escalation attacks.
