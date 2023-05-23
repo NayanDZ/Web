@@ -87,6 +87,7 @@
 Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks.
 
 <tr><td colspan="2"><b><a href="https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components">A06:2021-Vulnerable and Outdated Components:</a></b> 
+- <b>A9:2017 Using Components with Known Vulnerabilities:</b>
 
 - If you do not know the versions of all components you use (both client-side and server-side). This includes components you directly use as well as nested dependencies.
 
@@ -100,9 +101,8 @@ Many older or poorly configured XML processors evaluate external entity referenc
 
 - If you do not secure the components’ configurations (see A05:2021-Security Misconfiguration).
       
-- <b>A9:2017 Using Components with Known Vulnerabilities:</b>
-Components, such as libraries, frameworks, and other software modules, run with the same privileges as the application. If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover. Applications and APIs using components with known vulnerabilities may undermine application defenses and enable various attacks and impacts.
-  </td>
+</td>
+
   </tr>
 
   <tr>
