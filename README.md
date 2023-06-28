@@ -14,7 +14,7 @@
       
 - Accessing API with missing access controls for POST, PUT and DELETE.
       
-- Elevation of privilege. Acting as a user without being logged in or acting as an admin when logged in as a user.
+- Acting as a user without being logged in or acting as an admin when logged in as a user.
       
 - Metadata manipulation, such as replaying or tampering with a JSON Web Token (JWT) access control token, or a cookie or hidden field manipulated to elevate privileges or abusing JWT invalidation.
       
