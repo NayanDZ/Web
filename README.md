@@ -94,8 +94,6 @@ Many older or poorly configured XML processors evaluate external entity referenc
 - If the software is vulnerable, unsupported, or out of date. This includes the OS, web/application server, database management system (DBMS), applications, APIs and all components, runtime environments, and libraries.
 
 - If you do not fix or upgrade the underlying platform, frameworks, and dependencies in a risk-based, timely fashion. This commonly happens in environments when patching is a monthly or quarterly task under change control, leaving organizations open to days or months of unnecessary exposure to fixed vulnerabilities.
-
-- If you do not secure the components’ configurations (see A05:2021-Security Misconfiguration).
       
 </td>
 
