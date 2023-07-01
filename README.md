@@ -80,8 +80,6 @@
 - The security settings in the application servers, application frameworks (e.g., Struts, Spring, ASP.NET), libraries, databases, etc., are not set to secure values.
 
 - The server does not send security headers or directives, or they are not set to secure values.
-
-- The software is out of date or vulnerable (see A06:2021-Vulnerable and Outdated Components).
       
 - <b><a href="https://github.com/NayanDZ/xxe">A4:2017 XML External Entities (XXE):</a></b>
 Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks.
