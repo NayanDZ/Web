@@ -95,8 +95,6 @@ Many older or poorly configured XML processors evaluate external entity referenc
 
 - If you do not fix or upgrade the underlying platform, frameworks, and dependencies in a risk-based, timely fashion. This commonly happens in environments when patching is a monthly or quarterly task under change control, leaving organizations open to days or months of unnecessary exposure to fixed vulnerabilities.
 
-- If software developers do not test the compatibility of updated, upgraded, or patched libraries.
-
 - If you do not secure the components’ configurations (see A05:2021-Security Misconfiguration).
       
 </td>
