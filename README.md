@@ -114,7 +114,7 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
       
 - Auditable events, such as logins, failed logins, and high-value transactions, are not logged.
 - Warnings and errors generate no, inadequate, or unclear log messages.
-- Logs of applications and APIs are not monitored for suspicious activity.
+- Logs of applications, servers and APIs are not monitored for suspicious activity.
 - Logs are only stored locally.
 - Appropriate alerting thresholds and response escalation processes are not in place or effective.
 
