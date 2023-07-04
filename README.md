@@ -38,8 +38,6 @@
 
 - Is the received server certificate and the trust chain properly validated?
 
-- Are initialization vectors ignored, reused, or not generated sufficiently secure for the cryptographic mode of operation? Is an insecure mode of operation such as ECB in use? Is encryption used when authenticated encryption is more appropriate?
-
 - Are passwords being used as cryptographic keys in absence of a password base key derivation function?
 
 - Is randomness used for cryptographic purposes that was not designed to meet cryptographic requirements? Even if the correct function is chosen, does it need to be seeded by the developer, and if not, has the developer over-written the strong seeding functionality built into it with a seed that lacks sufficient entropy/unpredictability?
