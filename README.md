@@ -157,7 +157,6 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
   - [Shodan](https://www.shodan.io/): Shodan is a search engines that user find specific types (Computers, web cams, routers, servers, etc.)
   - [Duck Duck Go](https://duckduckgo.com/): does not collect or share personal information
   - [Startpage](https://www.startpage.com/)(ixquick): Combines the top ten results from multiple search engines
-  - [SearchDiggity v 3](https://resources.bishopfox.com/resources/tools/google-hacking-diggity/attack-tools/)
   - [Builtwith.com](https://builtwith.com/): Find out what websites are Built With
   - PunkSpider: Global web application vulnerability search engine. Deeper, faster, harder scans
 - [Google Hacking Database](https://www.exploit-db.com/google-hacking-database)
