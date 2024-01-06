@@ -167,13 +167,10 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
   - Tools: 
     - Httprint, Httprecon,
   - Online Testing Sites:
-    - https://w3techs.com/sites
     - Shodan: http://www.shodanhq.com
     - https://who.is
     - Netcraft: https://toolbar.netcraft.com/site_report?url=http://dulcedaynutrifood.com
-    - https://www.dnsstuff.com
   - Browser Plug-in: wappalyzer (Firefox / Chrome browser Plug-in)
-
 
 **1.3. Review Webserver Metafiles/Webpage Comments for Information Leakage:** Analyze robots.txt, sitemap.xml, crossdomain.xml and identify <META> Tags from website.
   - Tools:
