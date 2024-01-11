@@ -123,7 +123,7 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
   </tr>
 </table>
 
-## Strategies for VAPT
+## Strategies for VAPT      -> [PTES-Penetration Testing Execution Standard](https://pentest-standard.readthedocs.io/en/latest/index.html)
 1. Reconnaissance (Foot Printing):- Information gathering
 2. Network Scanning:- Find open ports and service running on the open ports
 3. Exploitation:- Gaining system access
@@ -149,6 +149,7 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
 9. Cryptography
 10. Business Logic Testing
 11. Client Side Testing
+12. API Testing
 
 ## 1. Information Gathering
 **1.1 Conduct Search Engine Discovery and Reconnaissance for Information Leakage**
