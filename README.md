@@ -169,7 +169,6 @@ Insecure Deserialization often leads to remote code execution. Even if Deseriali
     - Httprint, Httprecon,
   - Online Testing Sites:
     - Shodan: http://www.shodanhq.com
-    - https://who.is
     - Netcraft: https://toolbar.netcraft.com/site_report?url=http://dulcedaynutrifood.com
   - Browser Plug-in: wappalyzer (Firefox / Chrome browser Plug-in)
 
